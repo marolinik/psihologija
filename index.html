@@ -1,0 +1,1300 @@
+<!DOCTYPE html><html lang="sr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Psihologija Rada i Organizacije: Podcast za Učenje</title>
+<style>.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 24px 40px;
+    background-color: #f8f9fa;
+    box-shadow: none;
+    border-radius: 0;
+    }
+.chart-container {
+    position: relative;
+    margin: 3em auto;
+    max-width: 700px;
+    min-height: 200px;
+    max-height: 400px;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    }
+h1 {
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    }
+h5 {
+    font-size: 16px;
+    }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0 24px 0 24px;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-size: 16px;
+    max-width: None;
+    }
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+    border-bottom: none;
+    }
+header h1 {
+    color: white;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+header .subtitle {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    }
+nav {
+    margin: 30px 0;
+    padding: 25px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+nav h2 {
+    margin-top: 0;
+    color: #495057;
+    border-bottom: 2px solid #adb5bd;
+    padding-bottom: 10px;
+    }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    }
+nav ul li {
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    background: white;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    }
+
+nav ul li:hover {
+    background: #0056b3;
+    transform: translateX(10px);
+    }
+
+nav ul li:hover a {
+    color: white;
+    }
+nav ul li a {
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    }
+nav ul li a:hover {
+    color: #003d82;
+    }
+article {
+    margin-bottom: 60px;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+h2, h3, h4 {
+    color: #343a40;
+    font-size: 22px;
+    }
+h2 {
+    border-left: 5px solid #0056b3;
+    padding-left: 10px;
+    margin-top: 40px;
+    font-size: 22px;
+    }
+h3 {
+    color: #495057;
+    border-bottom: 1px solid #ced4da;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    font-size: 20px;
+    }
+blockquote {
+    border-left: 4px solid #6c757d;
+    padding-left: 15px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #495057;
+    background-color: #f8f9fa;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    }
+ul, ol {
+    padding-left: 20px;
+    }
+li {
+    margin-bottom: 8px;
+    }
+strong {
+    color: #0056b3;
+    }
+figure {
+    margin: 20px 0;
+    text-align: center;
+    }
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: block;
+    overflow: hidden;
+    max-height: 280px;
+    margin: 1em auto;
+    }
+figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-style: italic;
+    }
+.summary-box {
+    background-color: #eef7ff;
+    border: 1px solid #bde0fe;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    }
+.summary-box h4 {
+    margin-top: 0;
+    color: #0056b3;
+}
+
+.audio-player {
+    margin: 20px 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+}
+
+.audio-player audio {
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+}
+
+.audio-player-label {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    }
+.how-to-section {
+    background-color: #fdf7e4;
+    border: 1px solid #fceecb;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    }
+.how-to-section h2 {
+    border-left-color: #f5c000;
+    }
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #dee2e6;
+    font-size: 0.9rem;
+    color: #6c757d;
+    }
+a {
+    color: #0056b3;
+    }
+a:hover {
+    text-decoration: underline;
+    }
+@media only screen and (max-device-width: 768px) {
+            body {
+                padding: 0;
+                margin: 0;
+                font-family: PingFang SC;
+                font-size: 15px;
+                line-height: 1.5;
+            }
+
+            .container {
+                padding: 0;
+                margin: 16px 20px 30px;
+                box-shadow: none;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                font-family: PingFang SC;
+            }
+
+            h1 {
+                font-size: 1.87em;
+                line-height: 1.6;
+                margin-bottom: 0.5em;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 1.6em;
+                font-weight: 600;
+                margin-top: 1.3em;
+                margin-bottom: 0.8em;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 0.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+                font-weight: 600;
+                margin-top: 1em;
+                margin-bottom: 0.6em;
+            }
+
+            h4 {
+                font-size: 1.1em;
+                font-weight: 500;
+                margin-top: 1em;
+                margin-bottom: 0.5em;
+                font-style: normal;
+            }
+
+            h5 {
+                font-size: 1em;
+                font-weight: 500;
+                margin-bottom: 1.2em;
+            }
+
+            ul,
+            ol {
+                font-size: 1em; /* Equivalent to 17.6px if base is 16px */
+                font-weight: 400;
+                margin-bottom: 1.2em;
+                line-height: 1.8;
+            }
+
+            p {
+                font-size: 1em;
+                line-height: 1.8; /* Equivalent to 17.6px if base is 16px */
+                font-weight: 400;
+                margin-top: 0.8em;
+                margin-bottom: 0.8em;
+            }
+
+            blockquote {
+                padding: 1em 1.2em;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        figcaption {
+            margin-top: 0.5em;
+            font-size: 0.8em; /* Equivalent to 17.6px if base is 16px */
+            font-weight: 400;
+            text-align: center;
+            font-style: normal;
+            color: #7F8896;
+        }
+
+        img {
+            display: block;
+            overflow: hidden;
+            max-width: 100%;
+            max-height: 335px;
+            margin: 1em auto;
+            border-radius: 8px;
+        }
+        }</style>
+<link rel="stylesheet" href="https://static.skywork.ai/fe/skywork-site-assets/styles/doc_reference_style.css?v=1959206419922333696"/></head>
+<body>
+<div class="container">
+<header>
+<h1 id="section-1">Psihologija Rada i Organizacije: Podcast za Učenje</h1>
+<p class="subtitle">Vaš audio-vodič kroz ključne teme za ispit</p>
+<p>Dobrodošli u &#34;Psihologija Rada: Podcast za Učenje&#34;, serijal kreiran da vam pomogne da savladate gradivo na zabavan i efikasan način. Svaka lekcija iz skripte pretvorena je u &#34;epizodu&#34; sa jasnom strukturom, ključnim pojmovima i sažetkom, kako biste lakše pratili i pamtili gradivo.</p>
+<div style="margin-top: 20px;">
+<a href="testovi.html" style="display: inline-block; padding: 12px 24px; background: white; color: #667eea; border-radius: 8px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); transition: all 0.3s ease;">
+📝 Testirajte Svoje Znanje
+</a>
+</div>
+</header>
+<nav>
+<h2 id="section-1">Epizode Podcasta</h2>
+<ul>
+<li><a href="#epizoda1">Epizoda 1: Osnovi psihologije kao nauke</a></li>
+<li><a href="#epizoda2">Epizoda 2: Psihologija rada i organizacije</a></li>
+<li><a href="#epizoda3">Epizoda 3: Ličnost, osobine ličnosti i njihovo merenje</a></li>
+<li><a href="#epizoda4">Epizoda 4: Analiza posla</a></li>
+<li><a href="#epizoda5">Epizoda 5: Profesionalna orijentacija</a></li>
+<li><a href="#epizoda6">Epizoda 6: Profesionalna selekcija</a></li>
+<li><a href="#epizoda7">Epizoda 7: Prilagođavanje radnika radu i rada radniku</a></li>
+<li><a href="#epizoda8">Epizoda 8: Apsentizam radnika</a></li>
+<li><a href="#epizoda9">Epizoda 9: Fluktuacija radnika</a></li>
+<li><a href="#epizoda10">Epizoda 10: Motivacija za rad</a></li>
+<li><a href="#epizoda11">Epizoda 11: Ličnost i grupa</a></li>
+<li><a href="#epizoda12">Epizoda 12: Ličnost i organizacija</a></li>
+<li><a href="#epizoda13">Epizoda 13: Psihološki problem rukovođenja</a></li>
+<li><a href="#epizoda14">Epizoda 14: Konflikti u organizaciji</a></li>
+<li><a href="#epizoda15">Epizoda 15: Proces komuniciranja u organizaciji</a></li>
+<li><a href="#epizoda16">Epizoda 16: Stres u organizaciji</a></li>
+</ul>
+</nav>
+<article id="epizoda1">
+<h2 id="section-2">Epizoda 1: Osnovi psihologije kao nauke</h2>
+<div class="audio-player">
+<span class="audio-player-label">🎧 Slušajte epizodu</span>
+<audio controls>
+<source src="podcasts/Epizoda_01_Osnovi_psihologije_kao_nauke.mp3" type="audio/mpeg">
+Vaš pretraživač ne podržava audio element.
+</audio>
+</div>
+<h3 id="section-2-1">Uvod u epizodu</h3>
+<p>U današnjoj prvoj epizodi, postavljamo temelje! Krećemo od samih početaka – šta je psihologija, kako je nastala i koji su njeni osnovni zadaci. Saznaćemo kada je otvorena prva psihološka laboratorija i ko su ključne figure koje su oblikovale ovu nauku. Razmotrićemo i različite grane psihologije da bismo razumeli koliko je ovo polje široko i raznovrsno. Spremite se za putovanje u svet ljudskog uma!</p>
+<h3 id="section-2-2">Pojam, predmet i zadaci psihologije</h3>
+<p>Psihologija kao nauka formalno započinje osnivanjem <strong>prve psihološke laboratorije 1879. godine u Lajpcigu</strong>, od strane <strong>Vilijema Vunta</strong>. Od tada, razvile su se dve glavne struje: <strong>psihoanalitička (psihodinamička)</strong>, koja potiče iz učenja Frojda, Junga i Adlera, i <strong>psihologija ponašanja (biheviorizam)</strong>, zasnovana na radovima Votsona. Frojdova škola se fokusira na &#34;dinamiku uma&#34; (svesno-nesvesno) i koristi metode koje podstiču izražavanje osećanja i snova. Sa druge strane, bihevioralna psihologija koristi eksperimentalne metode u kontrolisanim uslovima kako bi proučila kako promene u okruženju utiču na ponašanje.</p>
+<p>Psihologija je definisana kao <strong>nauka o psihičkom životu čoveka i životinja</strong>. Ona izučava:</p>
+<ul>
+<li><strong>Psihičke procese:</strong> oseti, opažaji, pamćenje, mišljenje, mašta.</li>
+<li><strong>Individualne osobine:</strong> sposobnost, temperament, karakter, fizička konstitucija.</li>
+<li><strong>Delatnosti:</strong> postupci, govor, učenje, rad.</li>
+</ul>
+<p>Sama reč &#34;psihologija&#34; potiče od grčkih reči <em>&#34;psiha&#34;</em> (duša) i <em>&#34;logos&#34;</em> (nauka). Kroz istoriju, pojam duše se različito tumačio. <strong>Aristotel</strong> je razlikovao tri vrste duše: vegetativnu (biljke), vitalnu (životinje) i razumsku (čovek). <strong>Demokrit</strong> je smatrao da je duša materijalna, sastavljena od atoma. <strong>Dekart</strong> je razlikovao dušu i telo kao dve supstance, dok je <strong>Džon Lok</strong> tvrdio da je dečiji um pri rođenju &#34;tabula rasa&#34; (neispisan list) na kome iskustvo ispisuje utiske.</p>
+<h3 id="section-2-3">Zadaci psihologije</h3>
+<p>Osnovni zadatak psihologije je da utvrdi zakonitosti psihičkog života. Da bi se to postiglo, potrebno je proći kroz nekoliko nivoa saznanja:</p>
+<ol>
+<li>Opisivanje psihičkih pojava.</li>
+<li>Sistematizacija opisanih pojava.</li>
+<li>Otkrivanje uzročno-posledičnih veza.</li>
+<li>Naučno objašnjenje postojećih veza.</li>
+<li>Naučno predviđanje budućih psihičkih pojava.</li>
+<li>Izgradnja precizne psihološke terminologije.</li>
+</ol>
+<h3 id="section-2-4">Grane psihologije</h3>
+<p>Psihologija se razvila u brojne grane koje se mogu podeliti na osnovu predmeta proučavanja:</p>
+<ul>
+<li><strong>Proučavanje psihičkog života uslovljenog spoljašnjim svetom:</strong>
+<ul>
+<li><em>Pod uticajem fizičkog sveta:</em> psihofizika, fiziološka psihologija, biološka psihologija.</li>
+<li><em>Pod uticajem društvenog sveta:</em> psihologija naroda, etnološka psihologija, socijalna psihologija.</li>
+</ul>
+</li>
+<li><strong>Proučavanje psihičkog života u njegovoj raznovrsnosti:</strong>
+<ul>
+<li>Diferencijalna psihologija (individualne razlike), genetička psihologija (razvoj od rođenja do zrelosti), psihologija pojedinih razvojnih stadijuma (dečija, mladosti), psihopatologija (odstupanja od normalnog), zoopsihologija (psihički život životinja).</li>
+</ul>
+</li>
+<li><strong>Proučavanje psihičkog života vezanog za praktične aktivnosti:</strong>
+<ul>
+<li>Pedagoška, sudska, medicinska, vojna, psihologija sporta i <strong>psihologija rada</strong>.</li>
+</ul>
+</li>
+</ul>
+<div class="summary-box">
+<h4>Ključne tačke epizode 1</h4>
+<ul>
+<li>Psihologija je nauka o psihičkim procesima, osobinama i delatnostima.</li>
+<li>Prva laboratorija osnovana je 1879. u Lajpcigu (Vilijem Vunt).</li>
+<li>Glavne struje su psihoanaliza i biheviorizam.</li>
+<li>Zadaci psihologije uključuju opisivanje, objašnjavanje, predviđanje i kontrolu ponašanja.</li>
+<li>Psihologija rada je primenjena grana koja se bavi psihičkim životom u uslovima rada.</li>
+</ul>
+<div style="text-align: center; margin-top: 20px;">
+<a href="testovi.html#epizoda-1" style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-radius: 8px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3); transition: all 0.3s ease;">
+📝 Testiraj Svoje Znanje
+</a>
+</div>
+</div>
+</article>
+<article id="epizoda2">
+<h2 id="section-3">Epizoda 2: Psihologija rada i organizacije</h2>
+<div class="audio-player">
+<span class="audio-player-label">🎧 Slušajte epizodu</span>
+<audio controls>
+<source src="podcasts/Epizoda_02_Psihologija_rada_i_organizacije.mp3" type="audio/mpeg">
+Vaš pretraživač ne podržava audio element.
+</audio>
+</div>
+<h3 id="section-3-1">Uvod u epizodu</h3>
+<p>U drugoj epizodi, zaranjamo dublje u oblast koja je u fokusu ovog kursa: psihologiju rada i organizacije. Kako se nauka zainteresovala za rad? Ko su pioniri ove discipline i koji su eksperimenti promenili način na koji posmatramo radnika? Od Tejlorovog &#34;naučnog upravljanja&#34; do Hotornskog eksperimenta, pratićemo evoluciju misli o čoveku u radnom okruženju. Definišemo predmet i ciljeve ove važne grane psihologije.</p>
+<h3 id="section-3-2">Odnos nauke prema radu</h3>
+<p>Intenzivno interesovanje nauke za rad javlja se sa industrijskom revolucijom. Mogu se razlikovati tri perioda:</p>
+<ol>
+<li><strong>Prvi period:</strong> Čovek je zanemaren i tretiran kao dodatak mašini.</li>
+<li><strong>Drugi period:</strong> Tehnički aspekt je i dalje primaran, ali se rad počinje prilagođavati čoveku (npr. Tejlorizam, studije pokreta i vremena).</li>
+<li><strong>Treći period:</strong> Čovek je bolje shvaćen. Shvata se da materijalni stimulans nije jedini motivator, već su važni i međuljudski odnosi, ugled posla i sklad sa sposobnostima (Münsterberg, Mayo, Hotornski eksperiment).</li>
+</ol>
+<h3 id="section-3-3">Pojava i razvoj psihologije rada</h3>
+<p><strong>Frederik Tejlor</strong>, osnivač &#34;naučne organizacije rada&#34;, smatra se ključnom figurom. On je težio povećanju produktivnosti kroz analizu pokreta i standardizaciju metoda rada, verujući da postoji &#34;jedan najbolji način&#34; za obavljanje svakog posla. Iako je uspeo da podigne produktivnost, njegov pristup je kritikovan jer je radnika posmatrao kao mašinu, zanemarujući ljudske potrebe i fokusirajući se isključivo na profit poslodavca. Njegova osnovna pretpostavka bila je da je novac jedini motiv za rad.</p>
+<p>Osnivačem psihologije rada smatra se <strong>Hugo Münsterberg</strong>, učenik Vilijema Vunta. On je istakao važnost uslova rada i psiholoških faktora za produktivnost, što je u interesu i radnika i poslodavaca.</p>
+<h4>Hotornski eksperiment</h4>
+<p>Prekretnicu predstavlja <strong>Hotornski eksperiment</strong> (Elton Mayo, 1927-1932). Cilj je bio da se ispita uticaj fizičkih uslova (npr. osvetljenje) na produktivnost. Iznenađujuće, produktivnost je rasla u obe grupe (eksperimentalnoj i kontrolnoj), čak i kada su se uslovi pogoršavali. Zaključak je bio revolucionaran: <strong>ponašanje radnika ne zavisi samo od ekonomskih stimulansa i fizičkih uslova</strong>. Potrebe za pripadanjem, poštovanjem i dobri odnosi unutar neformalnih grupa postali su prepoznati kao ključni faktori produktivnosti. Iz ovih saznanja razvila se <strong>škola međuljudskih odnosa</strong>.</p>
+<p>Dalji razvoj, podstaknut radovima Abrahama Maslova, doveo je do diferencijacije psihologije rada na specifične oblasti.</p>
+<h3 id="section-3-4">Predmet, ciljevi i oblasti psihologije rada</h3>
+<p><strong>Predmet</strong> psihologije rada su uzajamni odnosi individue, posla i uslova rada u radnom okruženju. Njen osnovni <strong>zadatak</strong> je usklađivanje psihofizioloških mogućnosti čoveka sa zahtevima radne situacije, sa ciljem očuvanja zdravlja, adaptiranosti i zadovoljstva radom.</p>
+<p>Glavne oblasti psihologije rada su:</p>
+<ul>
+<li><strong>Inženjerska psihologija:</strong> Fokusira se na optimizaciju sistema čovek-mašina (prilagođavanje rada čoveku).</li>
+<li><strong>Kadrovska psihologija:</strong> Bavi se selekcijom, obukom i prilagođavanjem čoveka radu.</li>
+<li><strong>Psihologija međuljudskih odnosa:</strong> Proučava uticaj socijalnih interakcija na motivaciju i produktivnost.</li>
+<li><strong>Psihologija organizacije:</strong> Proučava sve psihičke pojave koje nastaju unutar organizacije kao rezultat interakcije njenih članova.</li>
+</ul>
+<div class="summary-box">
+<h4>Ključne tačke epizode 2</h4>
+<ul>
+<li>Razvoj psihologije rada prošao je kroz tri faze: od zanemarivanja čoveka do prepoznavanja njegove kompleksnosti.</li>
+<li><strong>Frederik Tejlor</strong> je uveo &#34;naučnu organizaciju rada&#34;, fokusiranu na efikasnost i novčanu motivaciju.</li>
+<li><strong>Hugo Münsterberg</strong> se smatra osnivačem psihologije rada.</li>
+<li><strong>Hotornski eksperiment</strong> je pokazao da su socijalni faktori i međuljudski odnosi ključni za produktivnost.</li>
+<li>Glavne oblasti su inženjerska, kadrovska, psihologija međuljudskih odnosa i psihologija organizacije.</li>
+</ul>
+<div style="text-align: center; margin-top: 20px;">
+<a href="testovi.html#epizoda-2" style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-radius: 8px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3); transition: all 0.3s ease;">
+📝 Testiraj Svoje Znanje
+</a>
+</div>
+</div>
+</article>
+<article id="epizoda3">
+<h2 id="section-4">Epizoda 3: Ličnost, osobine ličnosti i njihovo merenje</h2>
+<div class="audio-player">
+<span class="audio-player-label">🎧 Slušajte epizodu</span>
+<audio controls>
+<source src="podcasts/Epizoda_03_Licnost_osobine_licnosti_i_njihovo_merenje.mp3" type="audio/mpeg">
+Vaš pretraživač ne podržava audio element.
+</audio>
+</div>
+<h3 id="section-4-1">Uvod u epizodu</h3>
+<p>U trećoj epizodi, fokusiramo se na centralni pojam u psihologiji – ličnost. Šta čini ličnost jedinstvenom i doslednom? Koji faktori – biološki, socijalni – utiču na njen razvoj? Proći ćemo kroz različite faze života, od detinjstva do starosti, i definisati šta znači biti &#34;zrela ličnost&#34;. Takođe, razložićemo strukturu ličnosti na sposobnosti, temperament i karakter, i na kraju, videćemo kako psiholozi mere ove kompleksne osobine pomoću testova.</p>
+<h3 id="section-4-2">Ličnost: Činioci razvoja i osobine</h3>
+<p><strong>Ličnost</strong> predstavlja jedinstvo svih osobina i procesa koji se javljaju usklađeno i organizovano. Ključne karakteristike ličnosti su <strong>osobenost</strong> (svaka osoba je jedinstvena i neponovljiva) i <strong>doslednost</strong> (tendencija sličnog ponašanja u sličnim situacijama).</p>
+<p>Razvoj ličnosti zavisi od tri grupe činilaca:</p>
+<ol>
+<li><strong>Biološki činioci:</strong> Osnova za razvoj ličnosti, uključujući nervni sistem, endokrini sistem i telesnu konstituciju.</li>
+<li><strong>Socijalni činioci:</strong> Imaju presudan uticaj. Tu spadaju porodica, vršnjaci, škola, kultura i širi socijalni sistem.</li>
+<li><strong>Aktivnost pojedinca:</strong> Sopstvene odluke i akcije takođe oblikuju ličnost.</li>
+</ol>
+<h4>Kriterijumi zrele ličnosti</h4>
+<p>Zrela ličnost se odlikuje kroz tri aspekta zrelosti:</p>
+<ul>
+<li><strong>Intelektualna zrelost:</strong> Sposobnost kritičkog razmišljanja, samostalnog donošenja odluka i formiranja stavova.</li>
+<li><strong>Emocionalna zrelost:</strong> Sposobnost kontrolisanja osećanja i adekvatnog reagovanja.</li>
+<li><strong>Socijalna zrelost:</strong> Skladan odnos sa okolinom, spremnost na saradnju, prihvatanje obaveza i usmerenost na opšte, a ne samo lične ciljeve.</li>
+</ul>
+<h3 id="section-4-3">Struktura i merenje osobina ličnosti</h3>
+<p>Strukturu ličnosti čine različite osobine, koje se mogu grupisati u:</p>
+<ul>
+<li><strong>Sposobnosti:</strong> Intelektualne (sposobnost snalaženja u novim situacijama, učenja uviđanjem), psihosenzorne i psihomotorne.</li>
+<li><strong>Temperament:</strong> Način emocionalnog reagovanja (snaga, brzina i trajanje reakcije). Klasična podela po Hipokratu uključuje <strong>kolerički, sangvinički, flegmatički i melanhlički</strong> temperament.</li>
+<li><strong>Karakter:</strong> Odnos ličnosti prema moralnim normama i principima društva.</li>
+<li><strong>Fizička konstitucija:</strong> Telesne osobine poput visine, težine i mišićavosti.</li>
+</ul>
+<h4>Merenje osobina ličnosti</h4>
+<p>Psiholozi koriste <strong>psihološke testove</strong> za merenje osobina ličnosti. Da bi test bio koristan, mora biti:</p>
+<ul>
+<li><strong>Validan:</strong> Da meri upravo ono za šta je namenjen.</li>
+<li><strong>Pouzdan:</strong> Da daje slične rezultate u ponovljenim merenjima.</li>
+<li><strong>Selektivan (osetljiv):</strong> Da može da izmeri i male razlike među pojedincima.</li>
+<li><strong>Objektivan:</strong> Da rezultat ne zavisi od onoga ko ocenjuje test.</li>
+</ul>
+<p>Testovi se dele na testove znanja, testove sposobnosti i testove ličnosti. Među testovima sposobnosti, najpoznatiji su <strong>testovi inteligencije</strong>. Prvi takav test su konstruisali Bine i Simon 1905. godine, uvodeći pojam koeficijenta inteligencije (IQ), koji se računa formulom: <strong>IQ = (Umni uzrast / Kalendarski uzrast) * 100</strong>.</p>
+<div class="summary-box">
+<h4>Ključne tačke epizode 3</h4>
+<ul>
+<li>Ličnost je jedinstvena i dosledna organizacija osobina.</li>
+<li>Na razvoj ličnosti utiču biološki, socijalni i faktori lične aktivnosti.</li>
+<li>Strukturu ličnosti čine sposobnosti, temperament, karakter i fizička konstitucija.</li>
+<li>Psihološki testovi su osnovni alat za merenje osobina ličnosti i moraju biti validni, pouzdani, osetljivi i objektivni.</li>
+<li>Inteligencija se meri testovima, a IQ predstavlja odnos umnog i kalendarskog uzrasta.</li>
+</ul>
+<div style="text-align: center; margin-top: 20px;">
+<a href="testovi.html#epizoda-3" style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-radius: 8px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3); transition: all 0.3s ease;">
+📝 Testiraj Svoje Znanje
+</a>
+</div>
+</div>
+</article>
+<article id="epizoda4">
+<h2 id="section-5">Epizoda 4: Analiza posla</h2>
+<div class="audio-player">
+<span class="audio-player-label">🎧 Slušajte epizodu</span>
+<audio controls>
+<source src="podcasts/Epizoda_04_Analiza_posla.mp3" type="audio/mpeg">
+Vaš pretraživač ne podržava audio element.
+</audio>
+</div>
+<h3 id="section-5-1">Uvod u epizodu</h3>
+<p>U ovoj epizodi bavimo se fundamentalnim procesom u psihologiji rada – analizom posla. Šta tačno radnik radi, kako to radi i u kojim uslovima? Odgovori na ova pitanja su ključni za zapošljavanje, obuku i poboljšanje radnih procesa. Razložićemo posao na njegove sastavne delove, od pokreta do zanimanja, i definisati koje zahteve posao postavlja pred radnika. Zaronimo u metodologiju koja nam pomaže da razumemo svaki posao do najsitnijih detalja.</p>
+<h3 id="section-5-2">Pojam i metodološki pristup analizi posla</h3>
+<p><strong>Analiza posla</strong> je sistematski proces prikupljanja, obrade i sređivanja podataka o određenom poslu. Ona polazi od pretpostavki da se svaki posao može raščlaniti, da obučeni ljudi mogu utvrditi njegove elemente i zahteve, i da se poslovi međusobno razlikuju. Koristi od analize posla su višestruke: pomaže pri zapošljavanju, poboljšanju metoda rada, planiranju obuke i zaštiti zdravlja na radu.</p>
+<p>Metodološki pristup treba da odgovori na četiri ključna pitanja:</p>
+<ol>
+<li><strong>Šta</strong> radnik radi?</li>
+<li><strong>Kako</strong> on to radi?</li>
+<li>U <strong>kojim uslovima</strong> obavlja posao?</li>
+<li><strong>Kakav</strong> radnik treba da bude da bi efikasno obavio posao?</li>
+</ol>
+<p>Tim koji vrši analizu posla obično čine industrijski psiholog, lekar medicine rada, poznavalac posla, a po potrebi i inženjeri i ekonomisti.</p>
+<h3 id="section-5-3">Predmet analize posla</h3>
+<p>Predmet analize je sam posao, koji se može raščlaniti na hijerarhijske celine:</p>
+<ul>
+<li><strong>Radni pokreti:</strong> Najmanja jedinica, akcija jednog dela tela.</li>
+<li><strong>Operacije:</strong> Sled nekoliko radnih pokreta.</li>
+<li><strong>Zadaci:</strong> Skup povezanih operacija sa definisanim ciljem.</li>
+<li><strong>Posao (u užem smislu):</strong> Jedan ili više srodnih zadataka.</li>
+<li><strong>Radno mesto:</strong> Skup srodnih poslova koji se poveravaju jednom radniku.</li>
+<li><strong>Zanimanje:</strong> Niz međusobno srodnih radnih mesta.</li>
+</ul>
+<h3 id="section-5-4">Zahtevi posla</h3>
+<p>Na osnovu analize, definišu se zahtevi koje posao postavlja pred izvršioca. Oni mogu biti:</p>
+<ul>
+<li><strong>Stručni:</strong> Potrebna znanja, veštine i iskustvo (npr. nivo stručne spreme).</li>
+<li><strong>Biofiziološki:</strong> Fizičke karakteristike (npr. snaga, izdržljivost).</li>
+<li><strong>Psihološki:</strong> Mentalne, senzorne i motoričke sposobnosti, crte ličnosti.</li>
+</ul>
+<p>Zahtevi se mogu iskazati na tri nivoa:</p>
+<ul>
+<li><strong>Kritični:</strong> Minimum koji radnik mora da poseduje da bi uopšte mogao da obavlja posao.</li>
+<li><strong>Optimalni:</strong> Interval (donja i gornja granica) karakteristika za uspešno obavljanje posla.</li>
+<li><strong>Maksimalni:</strong> Gornja granica, čije prekoračenje može biti i štetno.</li>
+</ul>
+<p>Podaci dobijeni analizom posla koriste se u klasifikaciji poslova, profesionalnoj orijentaciji, stručnom obrazovanju i za unapređenje organizacije rada.</p>
+<div class="summary-box">
+<h4>Ključne tačke epizode 4</h4>
+<ul>
+<li>Analiza posla je proces prikupljanja podataka o radnim mestima.</li>
+<li>Ona odgovara na pitanja: šta, kako, u kojim uslovima se radi i kakav radnik je potreban.</li>
+<li>Posao se raščlanjuje na pokrete, operacije, zadatke, radno mesto i zanimanje.</li>
+<li>Zahtevi posla mogu biti stručni, biofiziološki i psihološki.</li>
+<li>Nivoi zahteva su kritični, optimalni i maksimalni.</li>
+</ul>
+<div style="text-align: center; margin-top: 20px;">
+<a href="testovi.html#epizoda-4" style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-radius: 8px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3); transition: all 0.3s ease;">
+📝 Testiraj Svoje Znanje
+</a>
+</div>
+</div>
+</article>
+<article id="epizoda5">
+<h2 id="section-6">Epizoda 5: Profesionalna orijentacija</h2>
+<div class="audio-player">
+<span class="audio-player-label">🎧 Slušajte epizodu</span>
+<audio controls>
+<source src="podcasts/Epizoda_05_Profesionalna_orijentacija.mp3" type="audio/mpeg">
+Vaš pretraživač ne podržava audio element.
+</audio>
+</div>
+<h3 id="section-6-1">Uvod u epizodu</h3>
+<p>Izbor zanimanja je jedna od najvažnijih odluka u životu. U ovoj epizodi, istražujemo kako se taj izbor donosi. Da li je to trenutna odluka ili dugotrajan proces? Koje teorije objašnjavaju zašto nas privlače određene profesije? Razjasnićemo pojam profesionalne orijentacije kao organizovane pomoći pojedincu da uskladi svoje osobine sa zahtevima sveta rada. Cilj je jasan: pravi čovek na pravom mestu.</p>
+<h3 id="section-6-2">Proces profesionalnog izbora</h3>
+<p>Izbor zanimanja nije jedan događaj, već <strong>razvojni proces</strong> koji se sastoji od niza odluka tokom dužeg vremenskog perioda. Svaki korak je povezan sa prethodnim i utiče na sledeći. Ovaj proces dobija na intenzitetu između 13. i 16. godine, kada se donose odluke o daljem školovanju.</p>
+<p>Ključne karakteristike procesa profesionalnog izbora su:</p>
+<ul>
+<li><strong>Ireverzibilnost:</strong> Odluke je teže promeniti kako osoba stari.</li>
+<li><strong>Isključivost:</strong> Proces postepeno smanjuje broj mogućih alternativa.</li>
+</ul>
+<h3 id="section-6-3">Teorije izbora zanimanja</h3>
+<p>Postoji više teorija koje pokušavaju da objasne kako i zašto ljudi biraju određena zanimanja. Sve one uzimaju u obzir faktore ličnosti i uticaj okoline. Neke od najpoznatijih su:</p>
+<ul>
+<li><strong>Ginzbergova teorija:</strong> Naglašava da je izbor zanimanja razvojni i ireverzibilan proces, koji predstavlja kompromis između individualnih faktora (ambicije, potencijali) i socijalnih faktora.</li>
+<li><strong>Holandova teorija:</strong> Smatra da ljudi biraju profesije (sredine) koje im omogućavaju da ispolje svoje veštine, sposobnosti i vrednosti. Definisao je šest tipova ličnosti i odgovarajućih radnih sredina.</li>
+<li><strong>Superova teorija:</strong> Ističe važnost &#34;koncepta o sebi&#34;. Profesionalni razvoj je proces implementacije slike o sebi. Buduće ponašanje se može razumeti samo poznavanjem prošlosti osobe.</li>
+<li><strong>Hopokova teorija:</strong> Sumira prethodne teorije, naglašavajući da je izbor zanimanja determinisan potrebama pojedinca. Čovek bira zanimanje za koje veruje da će najbolje zadovoljiti njegove potrebe.</li>
+</ul>
+<h3 id="section-6-4">Profesionalna orijentacija i njeni zadaci</h3>
+<p><strong>Profesionalna orijentacija</strong> je društveno organizovana aktivnost koja pomaže pojedincima da upoznaju svet zanimanja, ali i sopstvene mogućnosti i interesovanja, kako bi doneli što bolju odluku o karijeri. Ona obuhvata četiri ključna zadatka:</p>
+<ol>
+<li><strong>Profesionalno informisanje:</strong> Pružanje informacija o svetu rada, zanimanjima, uslovima rada, mogućnostima školovanja i zapošljavanja.</li>
+<li><strong>Analiza pojedinca:</strong> Pomoć pojedincu da upozna sebe – svoje sposobnosti, interesovanja, osobine ličnosti. Ovo se često radi u specijalizovanim institucijama primenom psiholoških testova i intervjua.</li>
+<li><strong>Profesionalno savetovanje:</strong> Stručni tim (psiholog, pedagog, lekar) pruža pomoć pojedincu u donošenju odluke. Konačnu odluku donosi sam kandidat.</li>
+<li><strong>Profesionalno praćenje:</strong> Pomoć kandidatu pri adaptaciji na školsku i radnu sredinu i provera ispravnosti donete odluke.</li>
+</ol>
+<div class="summary-box">
+<h4>Ključne tačke epizode 5</h4>
+<ul>
+<li>Izbor zanimanja je dugotrajan i razvojni proces, a ne trenutna odluka.</li>
+<li>Teorije izbora zanimanja (Ginzberg, Holand, Super, Hopok) naglašavaju interakciju ličnosti i okoline.</li>
+<li>Profesionalna orijentacija je organizovana pomoć pri izboru zanimanja.</li>
+<li>Njeni zadaci su: informisanje, analiza pojedinca, savetovanje i praćenje.</li>
+<li>Krajnji cilj je usklađivanje pojedinca i posla, tj. &#34;pravi čovek na pravom mestu&#34;.</li>
+</ul>
+<div style="text-align: center; margin-top: 20px;">
+<a href="testovi.html#epizoda-5" style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-radius: 8px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3); transition: all 0.3s ease;">
+📝 Testiraj Svoje Znanje
+</a>
+</div>
+</div>
+</article>
+<article id="epizoda6">
+<h2 id="section-7">Epizoda 6: Profesionalna selekcija</h2>
+<div class="audio-player">
+<span class="audio-player-label">🎧 Slušajte epizodu</span>
+<audio controls>
+<source src="podcasts/Epizoda_06_Profesionalna_selekcija.mp3" type="audio/mpeg">
+Vaš pretraživač ne podržava audio element.
+</audio>
+</div>
+<h3 id="section-7-1">Uvod u epizodu</h3>
+<p>Nakon što smo pričali o tome kako pojedinac bira zanimanje, u ovoj epizodi menjamo perspektivu. Sada je organizacija ta koja bira! Profesionalna selekcija je proces odabira najboljeg kandidata za određeni posao. Koje su pretpostavke ovog procesa? Kako predvideti nečije buduće radno ponašanje? Istražićemo faze selekcije, kriterijume uspešnosti i različite metode koje se koriste, od probnog rada do savremenih holističkih pristupa.</p>
+<h3 id="section-7-2">Pojam i pretpostavke profesionalne selekcije</h3>
+<p><strong>Profesionalna selekcija</strong> je proces odabiranja između većeg broja kandidata prijavljenih za neki posao. Za razliku od profesionalne orijentacije koja polazi od čoveka, selekcija polazi od posla i za njega bira najboljeg izvršioca.</p>
+<p>Ovaj proces se zasniva na sledećim pretpostavkama:</p>
+<ol>
+<li>Postoje značajne individualne razlike među ljudima.</li>
+<li>Postoji veza između određenih osobina i uspeha na poslu.</li>
+<li>Moguće je meriti i te osobine i uspeh na poslu.</li>
+<li>Na osnovu rezultata merenja (testova) moguće je predviđati buduće radno ponašanje.</li>
+</ol>
+<p>Proces selekcije obuhvata analizu posla, utvrđivanje zahteva, ispitivanje osobina kandidata i prognoziranje njihovog uspeha.</p>
+<h3 id="section-7-3">Predviđanje radnog ponašanja</h3>
+<p>Da bismo predvideli uspeh, potreban nam je <strong>kriterijum uspešnosti</strong> – mera stvarnog radnog ponašanja (npr. produktivnost, kvalitet rada, broj grešaka). Dobar kriterijum mora biti:</p>
+<ul>
+<li><strong>Reprezentativan:</strong> Da zaista predstavlja bitne aspekte posla.</li>
+<li><strong>Stabilan:</strong> Da daje iste mere u različitim vremenskim tačkama.</li>
+<li><strong>Čist:</strong> Da meri samo efekte koji su rezultat individualnih karakteristika radnika, a ne spoljnih faktora.</li>
+<li><strong>Diskriminativan:</strong> Da jasno razlikuje uspešne od neuspešnih radnika.</li>
+</ul>
+<p>Efikasnost selekcije zavisi od <strong>valjanosti</strong> seлекционог програма (koliko dobro naši testovi predviđaju stvarni uspeh), <strong>težine posla</strong> i <strong>selekcionog koeficijenta</strong> (odnos broja primljenih i broja prijavljenih kandidata).</p>
+<h3 id="section-7-4">Postupci profesionalne selekcije</h3>
+<p>U praksi se koriste različiti postupci za odabir kandidata:</p>
+<ul>
+<li><strong>Demonstracioni rad:</strong> Kandidat obavlja karakteristične operacije za dati posao, a prati se kvalitet i brzina rada. Korisno za zanatske poslove.</li>
+<li><strong>Audicija:</strong> Koristi se za poslove gde je dominantna verbalna komunikacija ili vizuelni nastup (npr. glumci, voditelji).</li>
+<li><strong>Analiza radne i stručne istorije:</strong> Pregled prethodnog iskustva, obrazovanja i preporuka kandidata.</li>
+<li><strong>Probni rad:</strong> Kandidat se angažuje na određeno vreme i radi pod realnim uslovima, a njegov rad prati komisija.</li>
+</ul>
+<p>Savremene tendencije idu ka <strong>&#34;holističkom pristupu&#34;</strong>, gde se umesto pojedinačnih crta ličnosti posmatra ponašanje u celini, a kao dobar pokazatelj budućeg uspeha uzima se stil rada i prethodna dostignuća kandidata.</p>
+<div class="summary-box">
+<h4>Ključne tačke epizode 6</h4>
+<ul>
+<li>Profesionalna selekcija je proces odabira najboljeg kandidata za posao, polazeći od zahteva posla.</li>
+<li>Zasniva se na postojanju individualnih razlika i mogućnosti njihovog merenja i povezivanja sa uspehom.</li>
+<li>Ključno je definisati dobar kriterijum uspešnosti (reprezentativan, stabilan, čist, diskriminativan).</li>
+<li>Postupci selekcije uključuju demonstracioni rad, audiciju, analizu biografije i probni rad.</li>
+<li>Savremeni pristup naglašava celovito posmatranje kandidata i njegovog stila rada.</li>
+</ul>
+<div style="text-align: center; margin-top: 20px;">
+<a href="testovi.html#epizoda-6" style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-radius: 8px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3); transition: all 0.3s ease;">
+📝 Testiraj Svoje Znanje
+</a>
+</div>
+</div>
+</article>
+<article id="epizoda7">
+<h2 id="section-8">Epizoda 7: Prilagođavanje radnika radu i rada radniku</h2>
+<div class="audio-player">
+<span class="audio-player-label">🎧 Slušajte epizodu</span>
+<audio controls>
+<source src="podcasts/Epizoda_07_Prilagođavanje_radnika_radu_i_rada_radniku.mp3" type="audio/mpeg">
+Vaš pretraživač ne podržava audio element.
+</audio>
+</div>
+<h3 id="section-8-1">Uvod u epizodu</h3>
+<p>U ovoj epizodi bavimo se dvosmernim procesom prilagođavanja. S jedne strane, kako se radnik prilagođava poslu i organizaciji? Govorićemo o profesionalnoj i organizacionoj adaptaciji, ali i o frustracijama i odbrambenim mehanizmima koji se javljaju kada stvari ne idu glatko. S druge strane, kako prilagoditi rad radniku? Upoznaćemo se sa tehnopsihofiziologijom rada, koja teži da radno okruženje, alate i uslove učini što humanijim i efikasnijim. Na kraju, dotaći ćemo se i neizbežnih pratilaca rada – zamora i odmora.</p>
+<h3 id="section-8-2">Prilagođavanje radnika radu</h3>
+<p>Ovaj proces se ostvaruje kroz dobru profesionalnu orijentaciju, selekciju i stručno obrazovanje. Cilj je racionalna raspodela ljudi na poslove koji odgovaraju njihovim psihofizičkim osobinama. Posledice neprilagođenosti su brojne: pad produktivnosti, povrede na radu, apsentizam, fluktuacija i opšte nezadovoljstvo.</p>
+<p>Postoje dve ključne dimenzije prilagođavanja:</p>
+<ul>
+<li><strong>Profesionalna adaptacija:</strong> Proces sticanja i razvijanja stručnih znanja i veština neophodnih za uspešno obavljanje posla. Objektivni pokazatelji su produktivnost i fluktuacija.</li>
+<li><strong>Organizaciona adaptacija:</strong> Proces uklapanja pojedinca u radnu grupu, preduzeće i širu socijalnu sredinu. Obuhvata kognitivnu (upoznavanje odnosa i normi), konativnu (učešće u životu grupe) i emocionalnu komponentu (formiranje pozitivnih stavova).</li>
+</ul>
+<h4>Frustracije i odbrambeni mehanizmi</h4>
+<p>Kada se na putu ostvarenja ciljeva nađu prepreke, dolazi do <strong>frustracije</strong>. Kao reakcija na frustraciju, osoba može uložiti dodatan napor da savlada prepreku ili može pribeći <strong>odbrambenim mehanizmima</strong> – nesvesnim strategijama za ublažavanje napetosti. Neki od najčešćih su:</p>
+<ul>
+<li><strong>Racionalizacija:</strong> Pronalaženje prihvatljivog, ali lažnog objašnjenja za svoje ponašanje.</li>
+<li><strong>Projekcija:</strong> Pripisivanje sopstvenih neprihvatljivih želja drugima.</li>
+<li><strong>Represija (potiskivanje):</strong> Potiskivanje neprijatnih sadržaja iz svesti.</li>
+<li><strong>Regresija:</strong> Vraćanje na oblike ponašanja karakteristične za ranije uzraste.</li>
+<li><strong>Sublimacija:</strong> Transformisanje neprihvatljivih nagona u društveno poželjne aktivnosti (smatra se najzdravijim mehanizmom).</li>
+</ul>
+<h3 id="section-8-3">Prilagođavanje rada radniku</h3>
+<p>Ovaj pristup teži da sadržaje posla, sredstva i uslove prilagodi čoveku i njegovim mogućnostima. Oblast koja se time bavi naziva se <strong>tehnopsihofiziologija rada</strong>. Njene metode uključuju proučavanje pokreta, analizu profesionalnih oboljenja i povreda, i optimizaciju mikroklimatskih uslova.</p>
+<p><strong>Mikroklimatski uslovi rada</strong> su fizički i materijalni uslovi pod kojima se rad odvija. Nepovoljni uslovi mogu značajno uticati na zdravlje i produktivnost. Tu spadaju:</p>
+<ul>
+<li>Hemijska isparenja i gasovi</li>
+<li>Temperatura (optimalna je između 15 i 30°C)</li>
+<li>Osvetljenje</li>
+<li>Buka i vibracije</li>
+</ul>
+<h4>Zamor i odmor</h4>
+<p><strong>Zamor</strong> je složena pojava koja obuhvata pad radnog učinka (proizvodni aspekt), biohemijske promene u organizmu (fiziološki aspekt) i doživljaj iscrpljenosti i bezvoljnosti (psihološki aspekt). Zamor nastaje u radu i nestaje tokom odmaranja. <strong>Odmor</strong> je prekidanje, usporavanje ili promena radne aktivnosti. Efikasniji su češći i kraći odmori. Odmor može biti pasivan (ležanje, spavanje) i aktivan (promena aktivnosti, rekreacija).</p>
+<div class="summary-box">
+<h4>Ključne tačke epizode 7</h4>
+<ul>
+<li>Prilagođavanje je dvosmeran proces: radnika radu i rada radniku.</li>
+<li>Adaptacija radnika ima profesionalnu (znanja i veštine) i organizacionu (uklapanje u socijalnu sredinu) dimenziju.</li>
+<li>Frustracije dovode do aktiviranja odbrambenih mehanizama kao što su racionalizacija, projekcija i sublimacija.</li>
+<li>Prilagođavanje rada radniku podrazumeva optimizaciju uslova rada, uključujući mikroklimu.</li>
+<li>Zamor je normalna posledica rada, a odmor (aktivan i pasivan) je neophodan za oporavak.</li>
+</ul>
+<div style="text-align: center; margin-top: 20px;">
+<a href="testovi.html#epizoda-7" style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-radius: 8px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3); transition: all 0.3s ease;">
+📝 Testiraj Svoje Znanje
+</a>
+</div>
+</div>
+</article>
+<article id="epizoda8">
+<h2 id="section-9">Epizoda 8: Apsentizam radnika</h2>
+<div class="audio-player">
+<span class="audio-player-label">🎧 Slušajte epizodu</span>
+<audio controls>
+<source src="podcasts/Epizoda_08_Apsentizam_radnika.mp3" type="audio/mpeg">
+Vaš pretraživač ne podržava audio element.
+</audio>
+</div>
+<h3 id="section-9-1">Uvod u epizodu</h3>
+<p>U ovoj kratkoj, ali važnoj epizodi, bavimo se fenomenom apsentizma – odsustvovanja sa posla. Zašto radnici izostaju? Koji su razlozi opravdani, a koji ne? Analiziraćemo uzroke, od loših uslova rada i niskih plata do ličnih i porodičnih problema. Videćemo i kako se apsentizam meri pomoću specifičnih indeksa. Razumevanje apsentizma je ključno za svaku organizaciju koja želi da poboljša radnu atmosferu i efikasnost.</p>
+<h3 id="section-9-2">Pojam i uzroci apsentizma</h3>
+<p><strong>Apsentizam</strong> predstavlja neplanirano i samoinicijativno odsustvovanje radnika sa posla. Može se manifestovati kao kašnjenje, kraće odsustvo tokom radnog dana, ili višednevno izostajanje.</p>
+<p>Uzroci apsentizma se mogu podeliti na dve grupe:</p>
+<ul>
+<li><strong>Opravdani uzroci:</strong> Razlozi koji nisu subjektivnog karaktera, iako se ne mogu planirati (npr. bolest, problemi sa prevozom, hitni porodični razlozi).</li>
+<li><strong>Neopravdani uzroci:</strong> Povezani su sa nezadovoljstvom poslom, lošim međuljudskim odnosima, konfliktima, nedostatkom motivacije i niskom prilagođenošću radu.</li>
+</ul>
+<p>Statistike pokazuju da određene demografske i radne karakteristike utiču na učestalost apsentizma:</p>
+<ul>
+<li><strong>Pol:</strong> Žene češće izostaju, često zbog obaveza vezanih za porodicu i decu.</li>
+<li><strong>Starost:</strong> Mlađi radnici imaju veći broj kraćih izostanaka.</li>
+<li><strong>Obrazovanje:</strong> Radnici sa nižim obrazovanjem češće izostaju.</li>
+<li><strong>Uslovi rada:</strong> Radnici koji rade u noćnoj smeni ili u otežanim uslovima češće izostaju.</li>
+</ul>
+<h3 id="section-9-3">Pokazatelji apsentizma</h3>
+<p>Apsentizam se može kvantitativno pratiti pomoću indeksa. Dva najčešća su:</p>
+<ol>
+<li><strong>Indeks globalnog apsentizma (IGA):</strong> Pokazuje učestalost izostajanja.
+                        <blockquote>IGA = (Broj izostanaka / Broj radnika) * 100</blockquote>
+</li>
+<li><strong>Indeks gubitka (IG):</strong> Pokazuje broj izgubljenih radnih dana po radniku.
+                        <blockquote>IG = (Broj izgubljenih radnih dana / Broj radnika)</blockquote>
+</li>
+</ol>
+<p>Praćenje ovih pokazatelja omogućava organizaciji da identifikuje probleme i preduzme mere za smanjenje apsentizma, što direktno utiče na produktivnost i radnu klimu.</p>
+<div class="summary-box">
+<h4>Ključne tačke epizode 8</h4>
+<ul>
+<li>Apsentizam je neplanirano odsustvovanje radnika sa posla.</li>
+<li>Uzroci mogu biti opravdani (bolest, porodični razlozi) i neopravdani (nezadovoljstvo, loši odnosi).</li>
+<li>Na apsentizam utiču faktori kao što su pol, starost, obrazovanje i uslovi rada.</li>
+<li>Meri se pomoću indeksa kao što su Indeks globalnog apsentizma (IGA) i Indeks gubitka (IG).</li>
+</ul>
+<div style="text-align: center; margin-top: 20px;">
+<a href="testovi.html#epizoda-8" style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-radius: 8px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3); transition: all 0.3s ease;">
+📝 Testiraj Svoje Znanje
+</a>
+</div>
+</div>
+</article>
+<article id="epizoda9">
+<h2 id="section-10">Epizoda 9: Fluktuacija radnika</h2>
+<div class="audio-player">
+<span class="audio-player-label">🎧 Slušajte epizodu</span>
+<audio controls>
+<source src="podcasts/Epizoda_09_Fluktuacija_radnika.mp3" type="audio/mpeg">
+Vaš pretraživač ne podržava audio element.
+</audio>
+</div>
+<h3 id="section-10-1">Uvod u epizodu</h3>
+<p>Nastavljamo sa temama koje ukazuju na probleme u organizaciji. U ovoj epizodi, govorimo o fluktuaciji – napuštanju organizacije. Zašto radnici odlaze? Razlikovaćemo potencijalnu fluktuaciju (želju za odlaskom) od realizovane (stvarni odlazak). Analiziraćemo brojne uzroke, od onih na nivou društva, preko faktora vezanih za sam posao i organizaciju, do ličnih karakteristika radnika. Naučićemo i kako se stopa fluktuacije izračunava.</p>
+<h3 id="section-10-2">Pojam i oblici fluktuacije</h3>
+<p><strong>Fluktuacija radnika</strong> je neplanirano i neorganizovano kretanje radne snage između organizacija. Odlazak je najčešće rezultat nezadovoljstva i nade da će u novoj radnoj sredini biti bolje.</p>
+<p>Postoje dva osnovna oblika fluktuacije:</p>
+<ul>
+<li><strong>Potencijalna fluktuacija:</strong> Ovo je faza koja prethodi napuštanju posla. Obuhvata proces postepenog povećavanja nezadovoljstva i sazrevanja odluke da se posao zameni drugim. Meri se anketama o stavovima zaposlenih.</li>
+<li><strong>Realizovana fluktuacija:</strong> Označava stvarno napuštanje organizacije. Može biti:
+                        <ul>
+<li><strong>Interna:</strong> Prelazak na drugo radno mesto unutar iste organizacije.</li>
+<li><strong>Eksterna:</strong> Napuštanje organizacije i odlazak u drugu.</li>
+</ul>
+</li>
+</ul>
+<p>Stopa fluktuacije (F) se izračunava kao procenat radnika koji su napustili organizaciju u određenom periodu:</p>
+<blockquote>F = (Broj odlazaka / Prosečan broj zaposlenih) * 100</blockquote>
+<h3 id="section-10-3">Uzroci fluktuacije</h3>
+<p>Uzroci fluktuacije su kompleksni i mogu se grupisati u četiri kategorije:</p>
+<ol>
+<li><strong>Opštedruštveni činioci:</strong> Ekonomska razvijenost regiona, stanje na tržištu rada.</li>
+<li><strong>Činioci posla:</strong> Vrsta, težina i složenost posla, loši uslovi rada, niska zarada, nedostatak mogućnosti za napredovanje.</li>
+<li><strong>Organizacioni činioci:</strong> Loša organizacija rada, neadekvatan stil rukovođenja, loša tehnološka opremljenost, loša perspektiva preduzeća.</li>
+<li><strong>Lični činioci:</strong> Godine starosti (mlađi češće fluktuiraju), pol, bračno stanje, osobine ličnosti (temperament, inteligencija).</li>
+</ol>
+<p>Visoka stopa fluktuacije je skup problem za organizaciju jer podrazumeva troškove regrutacije, selekcije i obuke novih radnika, kao i gubitak znanja i iskustva odlaskom starih radnika.</p>
+<div class="summary-box">
+<h4>Ključne tačke epizode 9</h4>
+<ul>
+<li>Fluktuacija je neplanirano napuštanje organizacije od strane zaposlenih.</li>
+<li>Razlikujemo potencijalnu (želja za odlaskom) i realizovanu (stvarni odlazak) fluktuaciju.</li>
+<li>Uzroci mogu biti društveni, vezani za posao, organizacioni i lični.</li>
+<li>Visoka fluktuacija je pokazatelj dubljih problema u organizaciji i stvara značajne troškove.</li>
+</ul>
+<div style="text-align: center; margin-top: 20px;">
+<a href="testovi.html#epizoda-9" style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-radius: 8px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3); transition: all 0.3s ease;">
+📝 Testiraj Svoje Znanje
+</a>
+</div>
+</div>
+</article>
+<article id="epizoda10">
+<h2 id="section-11">Epizoda 10: Motivacija za rad</h2>
+<div class="audio-player">
+<span class="audio-player-label">🎧 Slušajte epizodu</span>
+<audio controls>
+<source src="podcasts/Epizoda_10_Motivacija_za_rad.mp3" type="audio/mpeg">
+Vaš pretraživač ne podržava audio element.
+</audio>
+</div>
+<h3 id="section-11-1">Uvod u epizodu</h3>
+<p>Šta nas pokreće da radimo? U ovoj centralnoj epizodi, bavimo se jednim od najvažnijih pitanja u psihologiji rada – motivacijom. Proći ćemo kroz istorijski razvoj teorija, od shvatanja da je plata jedini motiv, do kompleksnih modela koji uključuju ljudske potrebe. Detaljno ćemo analizirati Maslovljevu hijerarhiju potreba, Hercbergovu dvofaktorsku teoriju i druge važne pristupe. Razjasnićemo i odnos između motivacije, produktivnosti i zadovoljstva poslom.</p>
+<h3 id="section-11-2">Razvoj teorijskih shvatanja motivacije</h3>
+<p>Interesovanje za motivaciju radnika raste sa industrijalizacijom. Rani pristupi, poput <strong>Tejlorove &#34;naučne organizacije rada&#34;</strong>, svodili su motivaciju na prostu vezu između rada i plate. Radnik je viđen kao &#34;ekonomski čovek&#34; motivisan isključivo zaradom.</p>
+<p>Prekretnicu donosi <strong>škola međuljudskih odnosa</strong>, proistekla iz Hotornskih eksperimenata, koja prepoznaje da su socijalne potrebe i odnosi u grupi snažni motivatori. Kasnije, teorije ličnosti dodatno obogaćuju razumevanje motivacije.</p>
+<h3 id="section-11-3">Ključne teorije motivacije</h3>
+<h4>Maslovljeva teorija hijerarhije potreba</h4>
+<p>Abraham Maslov je postavio jednu od najpoznatijih teorija. On smatra da ljudsko ponašanje pokreće težnja za zadovoljenjem potreba, koje su hijerarhijski organizovane. Kada se zadovolje potrebe nižeg reda, javljaju se potrebe višeg reda kao dominantni motivatori. Hijerarhija ide sledećim redom:</p>
+<ol>
+<li><strong>Fiziološke potrebe:</strong> (hrana, voda, san) – osnovne za preživljavanje.</li>
+<li><strong>Potrebe za sigurnošću:</strong> (fizička i ekonomska sigurnost, zaštita od opasnosti).</li>
+<li><strong>Potrebe za pripadanjem i ljubavlju:</strong> (prijateljstvo, pripadnost grupi, emotivni odnosi).</li>
+<li><strong>Potrebe za poštovanjem:</strong> (samopoštovanje, poštovanje od strane drugih, status, priznanje).</li>
+<li><strong>Potrebe za samoaktualizacijom:</strong> (ostvarenje sopstvenih potencijala, kreativnost, lični rast).</li>
+</ol>
+<h4>Hercbergova dvofaktorska teorija</h4>
+<p>Frederik Hercberg je tvrdio da zadovoljstvo i nezadovoljstvo poslom nisu dva kraja istog kontinuuma, već dve odvojene dimenzije. On je identifikovao dve grupe faktora:</p>
+<ul>
+<li><strong>Motivatori (faktori sadržaja posla):</strong> Njihovo prisustvo dovodi do zadovoljstva i motivacije. Uključuju uspeh, priznanje, sam posao, odgovornost, napredovanje. Povezani su sa potrebama višeg reda.</li>
+<li><strong>Higijenski faktori (faktori konteksta posla):</strong> Njihovo odsustvo dovodi do nezadovoljstva, ali njihovo prisustvo ne motiviše, već samo sprečava nezadovoljstvo. Uključuju platu, uslove rada, međuljudske odnose, sigurnost posla, politiku kompanije. Povezani su sa potrebama nižeg reda.</li>
+</ul>
+<h4>Druge važne teorije</h4>
+<ul>
+<li><strong>Instrumentalne teorije (teorije očekivanja):</strong> (npr. Vrum) Polaze od toga da je čovek racionalno biće koje bira ponašanje koje će najverovatnije dovesti do željenih ishoda. Motivacija zavisi od očekivanja da će napor dovesti do učinka, instrumentalnosti (verovanja da će učinak dovesti do nagrade) i valencije (privlačnosti nagrade).</li>
+<li><strong>Teorija balansa (pravičnosti):</strong> (npr. Adams) Ljudi su motivisani da održe pravičan odnos između onoga što ulažu u posao (input) i onoga što dobijaju (output), u poređenju sa drugima.</li>
+</ul>
+<h3 id="section-11-4">Motivacija, produktivnost i zadovoljstvo</h3>
+<p>Iako su čvrsto povezane, ove tri kategorije nisu isto. <strong>Motivacija</strong> je spremnost da se uloži napor. <strong>Produktivnost</strong> je ekonomski pokazatelj rezultata rada. <strong>Zadovoljstvo poslom</strong> je emotivni stav prema poslu. Visoka motivacija često vodi visokoj produktivnosti, ali ne uvek. Takođe, zadovoljan radnik nije nužno i produktivan radnik, iako zadovoljstvo može smanjiti apsentizam i fluktuaciju.</p>
+<div class="summary-box">
+<h4>Ključne tačke epizode 10</h4>
+<ul>
+<li>Motivacija je ključni pokretač radnog ponašanja.</li>
+<li>Maslovljeva teorija postavlja hijerarhiju potreba, od fizioloških do samoaktualizacije.</li>
+<li>Hercbergova teorija razlikuje motivatore (izazivaju zadovoljstvo) i higijenske faktore (sprečavaju nezadovoljstvo).</li>
+<li>Instrumentalne teorije i teorija balansa naglašavaju kognitivne procese u motivaciji.</li>
+<li>Motivacija, produktivnost i zadovoljstvo su povezani, ali različiti koncepti.</li>
+</ul>
+<div style="text-align: center; margin-top: 20px;">
+<a href="testovi.html#epizoda-10" style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-radius: 8px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3); transition: all 0.3s ease;">
+📝 Testiraj Svoje Znanje
+</a>
+</div>
+</div>
+</article>
+<article id="epizoda11">
+<h2 id="section-12">Epizoda 11: Ličnost i grupa</h2>
+<div class="audio-player">
+<span class="audio-player-label">🎧 Slušajte epizodu</span>
+<audio controls>
+<source src="podcasts/Epizoda_11_Ličnost_i_grupa.mp3" type="audio/mpeg">
+Vaš pretraživač ne podržava audio element.
+</audio>
+</div>
+<h3 id="section-12-1">Uvod u epizodu</h3>
+<p>Čovek je socijalno biće, a grupa je osnovni okvir našeg društvenog života. U ovoj epizodi, istražujemo dinamiku malih socijalnih i radnih grupa. Kako osobine ličnosti članova utiču na grupnu klimu i funkcionisanje? Kako se grupe formiraju i razvijaju? Razmotrićemo različite vrste grupa – od primarnih do formalnih i neformalnih – i analizirati strukturu grupe kroz pozicije, uloge i komunikacione mreže.</p>
+<h3 id="section-12-2">Socijalne i radne grupe</h3>
+<p><strong>Mala socijalna grupa</strong> je skup pojedinaca koji su u međusobnoj interakciji, svesni jedni drugih i opažaju sebe kao deo grupe. Obično broji do 30-ak članova. Ljudi se udružuju u grupe da bi zadovoljili svoje interese i potrebe, kao što su potreba za saradnjom, pripadanjem i sigurnošću.</p>
+<p>Osobine ličnosti članova daju ton funkcionisanju grupe. Crte koje primarno utiču na grupnu klimu su:</p>
+<ul>
+<li><strong>Interpersonalna orijentacija:</strong> Tendencija ka približavanju i saradnji sa drugima.</li>
+<li><strong>Socijalna senzitivnost:</strong> Sposobnost opažanja i reagovanja na potrebe i emocije drugih.</li>
+<li><strong>Dominantnost:</strong> Težnja ka vođstvu i uticaju na odluke grupe.</li>
+<li><strong>Zavisnost/Nezavisnost:</strong> Odnos prema autoritetu i grupnim normama.</li>
+<li><strong>Emocionalna stabilnost:</strong> Sposobnost kontrole emocija, što doprinosi ravnoteži grupe.</li>
+</ul>
+<h3 id="section-12-3">Razvoj i vrste grupa</h3>
+<p>Razvoj grupe počinje uspostavljanjem kontakta, a ključni faktor koji ljude privlači u grupu je <strong>interpersonalna atrakcija</strong>. Ona može biti zasnovana na fizičkoj blizini, sličnosti stavova, fizičkoj privlačnosti, privlačnosti aktivnosti ili ciljeva grupe.</p>
+<p>Grupe se mogu klasifikovati na različite načine:</p>
+<ul>
+<li><strong>Primarne grupe:</strong> Karakterišu ih bliski, intimni odnosi &#34;licem u lice&#34; i jaka emotivna povezanost (npr. porodica, grupa prijatelja). Nasuprot njima su sekundarne grupe, koje su veće i formalnije.</li>
+<li><strong>Referentne grupe:</strong> Grupe koje služe kao standard za poređenje i na koje se pojedinac ugleda. One oblikuju stavove i vrednosti svojih članova.</li>
+<li><strong>Formalne grupe:</strong> Formirane su od strane organizacije radi obavljanja određenih zadataka. Položaji, uloge i odnosi su unapred definisani.</li>
+<li><strong>Neformalne grupe:</strong> Nastaju spontano na osnovu zajedničkih interesovanja i prijateljstva unutar formalne organizacije. Imaju svoje nepisane norme i značajno utiču na ponašanje članova.</li>
+<li><strong>Radne grupe:</strong> Formalne grupe čiji je cilj obavljanje radnih zadataka. One su i značajan izvor zadovoljenja socijalnih potreba.</li>
+</ul>
+<h3 id="section-12-4">Struktura grupe</h3>
+<p><strong>Struktura grupe</strong> se odnosi na relativno trajan raspored elemenata i odnosa unutar grupe. Ona se ogleda kroz:</p>
+<ul>
+<li><strong>Sistem pozicija i uloga:</strong> Svaki član ima određenu poziciju (funkciju) i očekivanu ulogu (ponašanje vezano za poziciju).</li>
+<li><strong>Status i moć:</strong> Članovi su rangirani prema statusu, a moć se ogleda u sposobnosti uticanja na druge i donošenja odluka.</li>
+<li><strong>Komunikacione mreže:</strong> Obrasci komuniciranja među članovima (npr. centralizovane kao &#34;zvezda&#34; ili decentralizovane kao &#34;krug&#34;).</li>
+</ul>
+<div class="summary-box">
+<h4>Ključne tačke epizode 11</h4>
+<ul>
+<li>Mala grupa je osnovna jedinica socijalnog života, karakterisana interakcijom i zajedničkim identitetom.</li>
+<li>Osobine ličnosti članova (npr. emocionalna stabilnost, dominantnost) ključne su za dinamiku grupe.</li>
+<li>Grupe se dele na primarne, referentne, formalne, neformalne i radne.</li>
+<li>Strukturu grupe čine pozicije, uloge, status, moć i komunikacione mreže.</li>
+<li>Neformalne grupe unutar organizacije imaju snažan uticaj na radnu klimu i produktivnost.</li>
+</ul>
+<div style="text-align: center; margin-top: 20px;">
+<a href="testovi.html#epizoda-11" style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-radius: 8px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3); transition: all 0.3s ease;">
+📝 Testiraj Svoje Znanje
+</a>
+</div>
+</div>
+</article>
+<article id="epizoda12">
+<h2 id="section-13">Epizoda 12: Ličnost i organizacija</h2>
+<div class="audio-player">
+<span class="audio-player-label">🎧 Slušajte epizodu</span>
+<audio controls>
+<source src="podcasts/Epizoda_12_Ličnost_i_organizacija.mp3" type="audio/mpeg">
+Vaš pretraživač ne podržava audio element.
+</audio>
+</div>
+<h3 id="section-13-1">Uvod u epizodu</h3>
+<p>U ovoj epizodi, podižemo nivo analize sa grupe na celu organizaciju. Kakav je odnos između pojedinca i velike, formalne organizacije? Da li su njihovi interesi nužno suprotstavljeni? Razmotrićemo dva suprotna gledišta: jedno koje naglašava sukob između potrebe za samoaktualizacijom i zahteva organizacije, i drugo koje vidi organizaciju kao sredstvo za zadovoljenje osnovnih potreba. Upoznaćemo se sa čuvenim teorijama X, Y i Z, i analizirati osnovne odlike svake organizacije.</p>
+<h3 id="section-13-2">Interakcija ličnosti i organizacije</h3>
+<p>Osnovno obeležje interakcije ličnosti i organizacije je <strong>ograničavanje spontanosti ponašanja članova</strong>. Organizacija, da bi postigla svoje ciljeve, zahteva predvidljivost i kontrolu. Ovo stvara tenziju između dve suprotstavljene tendencije: težnje ka potpunom organizovanju (institucionalizam) i težnje ka slobodi (spontanost).</p>
+<p>Postoje dva glavna pristupa proučavanju ovog odnosa:</p>
+<h4>Pristup sa stanovišta ličnosti (Humanistički pristup)</h4>
+<p>Rodonačelnik ovog pristupa je <strong>Abraham Maslov</strong>, a razvio ga je <strong>Kris Ardžiris</strong>. Ovaj pristup tvrdi da postoji fundamentalna <strong>nesaglasnost</strong> između razvojnih težnji zrele ličnosti i zahteva formalne organizacije.</p>
+<ul>
+<li><strong>Zrela ličnost teži:</strong> aktivnosti, nezavisnosti, dugoročnoj perspektivi, korišćenju kompleksnih sposobnosti.</li>
+<li><strong>Formalna organizacija zahteva:</strong> pasivnost, zavisnost, podređenost, kratkoročnu perspektivu, korišćenje površnih sposobnosti.</li>
+</ul>
+<p>Ovaj sukob dovodi do frustracije i neproduktivnog ponašanja. Rešenje se vidi u promeni prirode posla (obogaćivanje posla), decentralizaciji i participativnom upravljanju.</p>
+<p><strong>Daglas MekGregor</strong> je ovu dihotomiju opisao kroz <strong>Teoriju X</strong> i <strong>Teoriju Y</strong>:</p>
+<ul>
+<li><strong>Teorija X (tradicionalni pogled):</strong> Prosečan čovek ne voli da radi, izbegava odgovornost i mora biti kontrolisan i prisiljen na rad.</li>
+<li><strong>Teorija Y (humanistički pogled):</strong> Rad je prirodan kao i igra, ljudi traže odgovornost, kreativni su i motivisani unutrašnjim potrebama.</li>
+</ul>
+<p><strong>Teorija Z</strong> (Ouchi) opisuje japanski model menadžmenta, koji naglašava dugoročno zaposlenje, kolektivnu odgovornost i holistički pristup zaposlenima.</p>
+<h4>Pristup sa stanovišta organizacije (Klasični pristup)</h4>
+<p>Ovaj pristup, čiji je predstavnik <strong>Štraus</strong>, tvrdi da ne postoji nužnost sukoba. Polazi od sledećih pretpostavki:</p>
+<ul>
+<li>Samo mali broj ljudi ima izraženu potrebu za samoaktualizacijom na poslu.</li>
+<li>Za većinu, rad je samo sredstvo za zadovoljenje egzistencijalnih potreba i kupovinu zadovoljstva van posla.</li>
+<li>Prosečan čovek je pasivan, zavisan i želi da neko njime rukovodi.</li>
+<li>Promena organizacije u pravcu veće slobode bi izazvala više štete nego koristi.</li>
+</ul>
+<h3 id="section-13-3">Osnovne odlike organizacije</h3>
+<p>Svaka organizacija, bez obzira na vrstu, ima sledeće odlike:</p>
+<ul>
+<li><strong>Složenost:</strong> Sastoji se od različitih podsistema (proizvodni, nabavni, upravljački).</li>
+<li><strong>Podela rada:</strong> Specijalizacija zadataka radi povećanja efikasnosti.</li>
+<li><strong>Koordinacija:</strong> Usklađivanje aktivnosti različitih delova.</li>
+<li><strong>Formalizacija:</strong> Postojanje unapred definisanih pravila, procedura i hijerarhijske strukture.</li>
+</ul>
+<div class="summary-box">
+<h4>Ključne tačke epizode 12</h4>
+<ul>
+<li>Odnos ličnosti i organizacije obeležen je tenzijom između potrebe za slobodom i zahteva za kontrolom.</li>
+<li>Humanistički pristup (Ardžiris, MekGregorova Teorija Y) vidi sukob između zrele ličnosti i formalne organizacije.</li>
+<li>Klasični pristup (Štraus, MekGregorova Teorija X) smatra da je za većinu ljudi rad samo sredstvo i da im odgovara struktura i kontrola.</li>
+<li>Teorija Z opisuje model zasnovan na kolektivizmu i dugoročnoj posvećenosti.</li>
+<li>Osnovne odlike organizacije su složenost, podela rada, koordinacija i formalizacija.</li>
+</ul>
+<div style="text-align: center; margin-top: 20px;">
+<a href="testovi.html#epizoda-12" style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-radius: 8px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3); transition: all 0.3s ease;">
+📝 Testiraj Svoje Znanje
+</a>
+</div>
+</div>
+</article>
+<article id="epizoda13">
+<h2 id="section-14">Epizoda 13: Psihološki problem rukovođenja</h2>
+<div class="audio-player">
+<span class="audio-player-label">🎧 Slušajte epizodu</span>
+<audio controls>
+<source src="podcasts/Epizoda_13_Psihološki_problem_rukovođenja.mp3" type="audio/mpeg">
+Vaš pretraživač ne podržava audio element.
+</audio>
+</div>
+<h3 id="section-14-1">Uvod u epizodu</h3>
+<p>Ko je vođa? Da li se rađa ili stvara? U ovoj epizodi, bavimo se kompleksnim fenomenom rukovođenja. Pratićemo razvoj teorija, od onih koje su tražile specifične &#34;osobine vođe&#34;, preko onih koje su naglašavale stilove rukovođenja (autokratski, demokratski), do savremenih situacionih teorija koje tvrde da uspešnost zavisi od interakcije ličnosti, stila i situacije. Analiziraćemo i psihološku stranu rukovođenja – kako lideri motivišu, komuniciraju i rešavaju konflikte.</p>
+<h3 id="section-14-2">Vođstvo i razvoj teorijske misli</h3>
+<p><strong>Vođstvo</strong> je proces uticanja na ponašanje drugih radi ostvarivanja zajedničkih ciljeva. <strong>Rukovođenje</strong> označava aktivnosti vođe (planiranje, organizovanje, kontrola).</p>
+<p>Razvoj teorija o rukovođenju prošao je kroz nekoliko faza:</p>
+<ol>
+<li><strong>Teorije osobina (&#34;teorije velikih ljudi&#34;):</strong> Rani pristup koji je pokušavao da identifikuje specifične fizičke, intelektualne i socijalne osobine koje poseduju uspešni rukovodioci (npr. inteligencija, samopouzdanje, dominantnost). Međutim, nije pronađen univerzalan skup osobina koji garantuje uspeh u svim situacijama.</li>
+<li><strong>Teorije stilova rukovođenja:</strong> Fokus se premešta sa toga <em>kakav je</em> vođa na to <em>šta</em> vođa radi. Istraživanja su identifikovala dve osnovne dimenzije ponašanja: <strong>zainteresovanost za proizvodnju (zadatak)</strong> i <strong>zainteresovanost za ljude (odnose)</strong>. Najpoznatija podela stilova je na:
+                        <ul>
+<li><strong>Autokratski stil:</strong> Vođa sam donosi odluke i nameće ih grupi.</li>
+<li><strong>Demokratski stil:</strong> Vođa uključuje grupu u donošenje odluka.</li>
+<li><strong>Laissez-faire (liberalni) stil:</strong> Vođa daje grupi potpunu slobodu.</li>
+</ul>
+</li>
+<li><strong>Situacione (kontingencijske) teorije:</strong> Savremeni pristup koji tvrdi da ne postoji jedan najbolji stil rukovođenja. Uspešnost zavisi od interakcije stila rukovođenja i faktora situacije. <strong>Fidlerov model</strong>, na primer, tvrdi da je stil orijentisan na zadatak najefikasniji u veoma povoljnim ili veoma nepovoljnim situacijama, dok je stil orijentisan na ljude bolji u umereno povoljnim situacijama.</li>
+</ol>
+<h3 id="section-14-3">Psihološka strana rukovođenja</h3>
+<p>Glavna karakteristika rukovođenja je postizanje ciljeva <em>preko drugih ljudi</em>. Zato se od rukovodioca, pored stručnih, očekuju i izražene <strong>međuljudske veštine</strong>. On mora biti i psiholog-praktičar.</p>
+<h4>Moć i motivacija</h4>
+<p>Rukovodioci koriste različite izvore moći da bi uticali na saradnike:</p>
+<ul>
+<li><strong>Legitimna moć:</strong> Proizilazi iz formalne pozicije u hijerarhiji.</li>
+<li><strong>Moć nagrade:</strong> Sposobnost da se nagradi željeno ponašanje.</li>
+<li><strong>Moć prinude:</strong> Sposobnost da se kazni neželjeno ponašanje.</li>
+<li><strong>Ekspertska moć:</strong> Zasnovana na znanju i stručnosti rukovodioca.</li>
+<li><strong>Referentna moć:</strong> Zasnovana na ličnoj privlačnosti i harizmi rukovodioca (identifikacija saradnika sa njim).</li>
+</ul>
+<h4>Komunikacija i rešavanje konflikata</h4>
+<p>Komunikacija je ključna operacija procesa rukovođenja. Rukovodilac mora biti vešt u vođenju sastanaka, davanju povratnih informacija i aktivnom slušanju. Takođe, mora biti sposoban da upravlja konfliktnim situacijama, da razume interese sukobljenih strana i da im pomogne da nađu rešenje.</p>
+<h3 id="section-14-4">Osobine uspešnog rukovodioca</h3>
+<p>Iako ne postoji jedinstven recept, uspešne rukovodioce često odlikuje kombinacija sledećih osobina i veština:</p>
+<ul>
+<li>Opšta intelektualna sposobnost</li>
+<li>Stručno znanje i informisanost</li>
+<li>Sposobnost donošenja odluka i preuzimanja rizika</li>
+<li>Komunikativnost i interpersonalna senzitivnost</li>
+<li>Motivacija za rukovođenjem i ambicioznost</li>
+<li>Prihvaćenost od strane grupe</li>
+</ul>
+<p>Uspešan rukovodilac je fleksibilan – ume da proceni situaciju i prilagodi svoj stil, pa tako nekada treba da naredi, nekada da se konsultuje, a nekada i da zamoli.</p>
+<div class="summary-box">
+<h4>Ključne tačke epizode 13</h4>
+<ul>
+<li>Rukovođenje je proces uticanja na druge radi ostvarivanja ciljeva.</li>
+<li>Teorije su evoluirale od fokusa na osobine, preko stilova, do situacionih modela.</li>
+<li>Ne postoji jedan najbolji stil; efikasnost zavisi od situacije.</li>
+<li>Rukovodioci koriste različite izvore moći (legitimnu, nagrade, prinude, ekspertsku, referentnu).</li>
+<li>Ključne veštine rukovodioca su motivisanje, komunikacija i rešavanje konflikata.</li>
+</ul>
+<div style="text-align: center; margin-top: 20px;">
+<a href="testovi.html#epizoda-13" style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-radius: 8px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3); transition: all 0.3s ease;">
+📝 Testiraj Svoje Znanje
+</a>
+</div>
+</div>
+</article>
+<article id="epizoda14">
+<h2 id="section-15">Epizoda 14: Konflikti u organizaciji</h2>
+<div class="audio-player">
+<span class="audio-player-label">🎧 Slušajte epizodu</span>
+<audio controls>
+<source src="podcasts/Epizoda_14_Konflikti_u_organizaciji.mp3" type="audio/mpeg">
+Vaš pretraživač ne podržava audio element.
+</audio>
+</div>
+<h3 id="section-15-1">Uvod u epizodu</h3>
+<p>Gde god ima ljudi, ima i konflikata. U ovoj epizodi, demistifikujemo konflikte u organizaciji. Da li su oni uvek loši? Razmotrićemo različita tumačenja – od onih koja vide konflikt kao nepoželjnu pojavu koju treba eliminisati, do onih koja ga smatraju neizbežnim, pa čak i poželjnim motorom promena. Analiziraćemo uzroke, vrste i tipove konflikata, i na kraju, ponuditi konkretne postupke za njihovo rešavanje i upravljanje.</p>
+<h3 id="section-15-2">Tumačenje i uzroci konflikata</h3>
+<p><strong>Konflikt</strong> je odnos suprotstavljanja između dve ili više strana, zasnovan na nesaglasnosti ciljeva, interesa ili vrednosti. Psihološka osnova konflikta je često <strong>frustracija</strong> osnovnih potreba ili motiva.</p>
+<p>Postoje različita tumačenja konflikata:</p>
+<ul>
+<li><strong>Tumačenje škole međuljudskih odnosa:</strong> Konflikt je nepoželjan, znak loše komunikacije i treba ga izbegavati i rešavati.</li>
+<li><strong>Pluralističko tumačenje:</strong> Konflikt je neizbežan i prirodan rezultat borbe za ograničene resurse. On može biti i poželjan jer podstiče promene i inovacije. Treba njime upravljati, a ne nužno ga eliminisati.</li>
+<li><strong>Mentalna higijena:</strong> Kompromisni stav koji kaže da je konflikt neizbežan, ali da ga treba izbegavati kada je to moguće, posebno sa emotivno bliskim osobama.</li>
+</ul>
+<p><strong>Uzroci konflikata</strong> u organizaciji mogu biti brojni: loši organizacioni i ekonomski uslovi, nejasne nadležnosti, nepravedna raspodela, neadekvatno rukovođenje, ali i razlike u ličnostima, stavovima i vrednostima članova.</p>
+<h3 id="section-15-3">Vrste i tipovi konflikata</h3>
+<p>Prema prirodi, konflikti mogu biti:</p>
+<ul>
+<li><strong>Konflikti interesa:</strong> Borba za ograničena dobra (novac, pozicije, resursi).</li>
+<li><strong>Konflikti vrednosti:</strong> Sukob zbog različitih uverenja, ideologija i principa. Ovi konflikti su često dublji i teže rešivi.</li>
+</ul>
+<p>Prema ishodu, konflikti se dele na:</p>
+<ul>
+<li><strong>Konstruktivni konflikti:</strong> Vode ka traženju boljih rešenja, podstiču kreativnost i inovativnost. Energija je usmerena na rešavanje problema. Njima treba <strong>upravljati</strong>.</li>
+<li><strong>Destruktivni konflikti:</strong> Ometaju rad, kvare međuljudske odnose i troše energiju na međusobne napade umesto na rešavanje problema. Njih treba <strong>razrešavati</strong> ili transformisati u konstruktivne.</li>
+</ul>
+<p>Nosioci konflikata mogu biti pojedinci (interpersonalni), grupe (intergrupni), ili se konflikt može odvijati unutar same osobe (intrapsihički) ili unutar grupe (intragrupni).</p>
+<h3 id="section-15-4">Postupci rešavanja i upravljanja konfliktima</h3>
+<p>Postoji niz strategija za rešavanje i upravljanje konfliktima:</p>
+<ul>
+<li><strong>Rasprava:</strong> Suprotstavljene strane iznose svoja gledišta kako bi se bolje razumele.</li>
+<li><strong>Uvođenje nadređenih ciljeva:</strong> Pronalaženje zajedničkog cilja koji je važniji od pojedinačnih interesa i koji ujedinjuje strane.</li>
+<li><strong>Uvođenje arbitra:</strong> Angažovanje treće, neutralne strane da pomogne u pronalaženju rešenja.</li>
+<li><strong>Kompromis:</strong> Rešenje u kojem svaka strana nešto dobija i nečega se odriče.</li>
+<li><strong>Konfrontacija:</strong> Direktno suočavanje sa problemom kako bi se razjasnile pozicije.</li>
+<li><strong>Ublažavanje:</strong> Naglašavanje zajedničkih interesa i smanjivanje razlika.</li>
+<li><strong>Prisiljavanje:</strong> Jedna strana nameće svoje rešenje drugoj (obično kratkoročno i neefikasno).</li>
+<li><strong>Povlačenje:</strong> Izbegavanje konflikta.</li>
+</ul>
+<p>Efikasno upravljanje konfliktima podrazumeva prvo dijagnozu (utvrđivanje uzroka, vrste i intenziteta sukoba), a zatim primenu odgovarajuće strategije (intervencije).</p>
+<div class="summary-box">
+<h4>Ključne tačke epizode 14</h4>
+<ul>
+<li>Konflikt je suprotstavljanje zasnovano na nesaglasnosti ciljeva, interesa ili vrednosti.</li>
+<li>Tumačenja konflikta variraju od toga da je on uvek loš do toga da može biti koristan.</li>
+<li>Konflikti mogu biti konstruktivni (vode rešenju) i destruktivni (ometaju rad).</li>
+<li>Postupci rešavanja uključuju raspravu, arbitražu, kompromis i uvođenje nadređenih ciljeva.</li>
+<li>Upravljanje konfliktima je ključna veština u svakoj organizaciji.</li>
+</ul>
+<div style="text-align: center; margin-top: 20px;">
+<a href="testovi.html#epizoda-14" style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-radius: 8px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3); transition: all 0.3s ease;">
+📝 Testiraj Svoje Znanje
+</a>
+</div>
+</div>
+</article>
+<article id="epizoda15">
+<h2 id="section-16">Epizoda 15: Proces komuniciranja u organizaciji</h2>
+<div class="audio-player">
+<span class="audio-player-label">🎧 Slušajte epizodu</span>
+<audio controls>
+<source src="podcasts/Epizoda_15_Proces_komuniciranja_u_organizaciji.mp3" type="audio/mpeg">
+Vaš pretraživač ne podržava audio element.
+</audio>
+</div>
+<h3 id="section-16-1">Uvod u epizodu</h3>
+<p>Komunikacija je krvotok svake organizacije. Bez nje, ništa ne funkcioniše. U ovoj epizodi, razložićemo proces komuniciranja na njegove osnovne elemente: pošiljalac, primalac, poruka, kanal. Razlikovaćemo formalne, unapred definisane kanale komunikacije od neformalnih, spontanih. Analiziraćemo i tipične komunikacione mreže, kao i najčešće teškoće i barijere koje ometaju efikasnu razmenu informacija. Na kraju, daćemo savete kako te teškoće prevazići.</p>
+<h3 id="section-16-2">Elementi i vrste komunikacije</h3>
+<p><strong>Komunikacija</strong> je proces prenosa informacija i značenja od jedne do druge osobe putem razumljivih simbola. To je sredstvo kojim se informiše, motiviše i upravlja.</p>
+<p>Osnovni elementi komunikacionog procesa su:</p>
+<ul>
+<li><strong>Pošiljalac (enkoder):</strong> Izvor informacije koji započinje proces.</li>
+<li><strong>Poruka:</strong> Sama informacija, koja može biti verbalna ili neverbalna.</li>
+<li><strong>Kanal (medijator):</strong> Put kojim se poruka prenosi (npr. govor, pismo, e-mail).</li>
+<li><strong>Primalac (dekoder):</strong> Osoba koja prima i tumači poruku.</li>
+<li><strong>Povratna informacija (feedback):</strong> Odgovor primaoca koji pošiljaocu govori da li je poruka primljena i kako je shvaćena.</li>
+<li><strong>Opažanje (percepcija):</strong> Subjektivni filteri kroz koje i pošiljalac i primalac posmatraju svet.</li>
+</ul>
+<p>U organizaciji, razlikujemo dve osnovne vrste komunikacije:</p>
+<ul>
+<li><strong>Formalne komunikacije:</strong> Odvijaju se unapred utvrđenim, zvaničnim kanalima (npr. od nadređenog ka podređenom). Mogu biti vertikalne (gore-dole) i horizontalne (između kolega na istom nivou).</li>
+<li><strong>Neformalne komunikacije (&#34;glasine&#34;):</strong> Odvijaju se izvan formalnih kanala, spontano, na osnovu ličnih kontakata. Brže su, ali često manje pouzdane i podložne iskrivljavanju.</li>
+</ul>
+<h3 id="section-16-3">Tipovi komunikacionih mreža i teškoće u komunikaciji</h3>
+<p>Obrasci komuniciranja u grupi formiraju mreže. Dva osnovna tipa su:</p>
+<ul>
+<li><strong>Tip Zvezde (centralizovana mreža):</strong> Svi komuniciraju sa jednom centralnom osobom (npr. menadžerom). Brza je i efikasna za jednostavne zadatke, ali smanjuje zadovoljstvo članova.</li>
+<li><strong>Tip Kruga (decentralizovana mreža):</strong> Svi članovi komuniciraju međusobno. Sporija je, ali bolja za složene zadatke, podiže motivaciju i omogućava participaciju.</li>
+</ul>
+<h4>Teškoće u procesu komuniciranja</h4>
+<p>Barijere u komunikaciji mogu nastati na različitim nivoima:</p>
+<ul>
+<li><strong>Organizacione teškoće:</strong> Nejasna organizaciona struktura, previše hijerarhijskih nivoa kroz koje poruka putuje.</li>
+<li><strong>Teškoće vezane za formulaciju poruke:</strong> Upotreba nejasnih reči, žargona, loše tumačenje neverbalnih znakova.</li>
+<li><strong>Teškoće vezane za psihološki profil učesnika:</strong> Emocije, predrasude, stereotipi, različite percepcije i lične potrebe mogu deformisati poruku.</li>
+</ul>
+<h4>Otklanjanje teškoća</h4>
+<p>Da bi se komunikacija poboljšala, potrebno je raditi na više nivoa: pojednostaviti organizacionu strukturu, koristiti jasan i jednostavan jezik, ponavljati ključne delove poruke, i što je najvažnije, razvijati veštinu <strong>aktivnog slušanja</strong>. Aktivno slušanje podrazumeva punu koncentraciju na sagovornika, postavljanje pitanja i davanje povratne informacije kako bismo proverili da li smo dobro razumeli poruku.</p>
+<div class="summary-box">
+<h4>Ključne tačke epizode 15</h4>
+<ul>
+<li>Komunikacija je proces prenosa informacija i značenja.</li>
+<li>Osnovni elementi su pošiljalac, poruka, kanal, primalac i povratna informacija.</li>
+<li>Razlikujemo formalne (zvanične) i neformalne (spontane) komunikacije.</li>
+<li>Teškoće u komunikaciji mogu biti organizacione, semantičke i psihološke.</li>
+<li>Ključ za prevazilaženje teškoća je korišćenje jasnog jezika i veština aktivnog slušanja.</li>
+</ul>
+<div style="text-align: center; margin-top: 20px;">
+<a href="testovi.html#epizoda-15" style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-radius: 8px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3); transition: all 0.3s ease;">
+📝 Testiraj Svoje Znanje
+</a>
+</div>
+</div>
+</article>
+<article id="epizoda16">
+<h2 id="section-17">Epizoda 16: Stres u organizaciji</h2>
+<div class="audio-player">
+<span class="audio-player-label">🎧 Slušajte epizodu</span>
+<audio controls>
+<source src="podcasts/Epizoda_16_Stres_u_organizaciji.mp3" type="audio/mpeg">
+Vaš pretraživač ne podržava audio element.
+</audio>
+</div>
+<h3 id="section-17-1">Uvod u epizodu</h3>
+<p>U poslednjoj epizodi našeg serijala, bavimo se neizbežnom temom savremenog života i rada – stresom. Šta je stres i kako se manifestuje? Koji su glavni izvori stresa (stresori) u organizaciji, od preopterećenosti poslom i nejasnih uloga, do loših odnosa i pritiska za napredovanjem? Analiziraćemo posledice stresa po pojedinca i organizaciju, i na kraju, ponuditi strategije za upravljanje stresom, kako na organizacionom, tako i na ličnom nivou.</p>
+<h3 id="section-17-2">Pojam, faze i izvori stresa</h3>
+<p><strong>Stres</strong> je psihofizičko stanje u koje čovek zapada kada je suočen sa zahtevima okoline koje procenjuje kao preteške ili ugrožavajuće. Prema Seljeovom modelu, reakcija na stres se odvija u tri faze:</p>
+<ol>
+<li><strong>Faza alarma:</strong> Početna, šok faza u kojoj se organizam priprema za &#34;borbu ili beg&#34;.</li>
+<li><strong>Faza otpora:</strong> Organizam se aktivno bori sa stresorom i pokušava da se adaptira.</li>
+<li><strong>Faza iscrpljenosti:</strong> Ako stresor predugo traje, odbrambene snage organizma popuštaju, što može dovesti do bolesti.</li>
+</ol>
+<p>Izvori stresa (stresori) mogu biti u organizaciji i van nje.</p>
+<h4>Izvori stresa u organizaciji:</h4>
+<ul>
+<li><strong>Priroda posla:</strong> Preopterećenost (kvantitativna i kvalitativna), rad pod vremenskim pritiskom, česta putovanja.</li>
+<li><strong>Uloge u organizaciji:</strong> Konflikt uloga (suprotstavljeni zahtevi) i nejasnoća uloge (nedostatak informacija o tome šta se očekuje).</li>
+<li><strong>Odgovornost:</strong> Posebno odgovornost za druge ljude.</li>
+<li><strong>Odnosi na radu:</strong> Loši odnosi sa kolegama, šefovima ili podređenima.</li>
+<li><strong>Kretanje na poslu:</strong> Pritisak za napredovanjem, ali i strah od neuspeha, degradacije ili gubitka posla.</li>
+<li><strong>Psihološka klima:</strong> Nedostatak participacije, osećaja pripadnosti, loš sistem informisanja.</li>
+</ul>
+<h3 id="section-17-3">Posledice i upravljanje stresom</h3>
+<p>Dugotrajan stres može imati ozbiljne posledice po <strong>pojedinca</strong> (npr. povišen krvni pritisak, anksioznost, depresija, sagorevanje na poslu) i po <strong>organizaciju</strong> (povećan apsentizam i fluktuacija, smanjena produktivnost, više grešaka i povreda na radu).</p>
+<p><strong>Upravljanje stresom</strong> (stress management) podrazumeva niz strategija na dva nivoa:</p>
+<h4>Organizacione mere:</h4>
+<ul>
+<li>Poboljšanje profesionalne selekcije (pravi čovek na pravom mestu).</li>
+<li>Redizajniranje poslova kako bi bili zanimljiviji i manje stresni.</li>
+<li>Jasno definisanje uloga i odgovornosti.</li>
+<li>Poboljšanje komunikacije i međuljudskih odnosa.</li>
+<li>Organizovanje programa za pomoć zaposlenima.</li>
+</ul>
+<h4>Individualne mere:</h4>
+<ul>
+<li>Promena životnog stila (redovan san, pravilna ishrana, fizička aktivnost).</li>
+<li>Tehnike relaksacije (meditacija, duboko disanje).</li>
+<li>Bolje upravljanje vremenom (postavljanje prioriteta).</li>
+<li>Razvijanje socijalne podrške (razgovor sa prijateljima, porodicom).</li>
+<li>Promena kognitivne procene (učenje da se na stresore gleda kao na izazove, a ne kao na pretnje).</li>
+</ul>
+<div class="summary-box">
+<h4>Ključne tačke epizode 16</h4>
+<ul>
+<li>Stres je reakcija organizma na preteške zahteve okoline.</li>
+<li>Odvija se kroz faze alarma, otpora i iscrpljenosti.</li>
+<li>Glavni stresori na poslu su preopterećenost, konflikt uloga, loši odnosi i odgovornost.</li>
+<li>Posledice stresa su i fizičke i psihičke, i negativno utiču i na pojedinca i na organizaciju.</li>
+<li>Upravljanje stresom uključuje mere na organizacionom (npr. redizajn posla) i individualnom nivou (npr. tehnike relaksacije, upravljanje vremenom).</li>
+</ul>
+<div style="text-align: center; margin-top: 20px;">
+<a href="testovi.html#epizoda-16" style="display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-radius: 8px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3); transition: all 0.3s ease;">
+📝 Testiraj Svoje Znanje
+</a>
+</div>
+</div>
+</article>
+</section>
+<footer>
+<p>Generisano: 2025-08-23</p>
+<p>Ovaj materijal je kreiran u edukativne svrhe na osnovu priložene skripte &#34;Psihologija skripta - cela.md&#34; i dopunjen informacijama iz javno dostupnih izvora.</p>
+</footer>
+<div class="reference-container">
+			<div class="reference-section">
+				<h3 class="reference-title">Reference</h3>
+				<div class="reference-list">
+					
+					<div class="reference-item">
+						<span class="reference-number">[1]</span>
+						<div class="reference-content">
+							<div class="reference-text-container">
+								<span class="reference-text">psihologija_skripta_-_cela</span>
+									
+							</div>
+							<a href="https://static-us-img.skywork.ai/prod/analysis/2025-08-23/3361988621207161525/1959175277621600256_5f29b6b71006cf67881a416c26730bfd.pdf" class="reference-link" target="_blank">
+								https://static-us-img.skywork.ai/prod/analysis/2025-08-23/3361988621207161525/1959175277621600256_5f29b6b71006cf67881a416c26730bfd.pdf
+							</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div></div>
+
+</body></html>
