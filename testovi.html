@@ -408,8 +408,8 @@
         </div>
 
         <div class="nav-buttons">
-            <button class="nav-btn active" onclick="showSection('episode-tests')">Testovi po Epizodama</button>
-            <button class="nav-btn" onclick="showSection('comprehensive-tests')">Sveobuhvatni Testovi</button>
+            <button class="nav-btn active" data-section="episode-tests">Testovi po Epizodama</button>
+            <button class="nav-btn" data-section="comprehensive-tests">Sveobuhvatni Testovi</button>
         </div>
 
         <!-- Testovi po epizodama -->
@@ -453,13 +453,13 @@
             <p id="scoreText"></p>
             <p id="scoreMessage"></p>
             <div class="results-buttons">
-                <button class="btn btn-primary" onclick="retryQuiz()">Pokušaj Ponovo</button>
-                <button class="btn btn-secondary" onclick="backToTests()">Nazad na Testove</button>
+                <button class="btn btn-primary" id="retryBtn">Pokušaj Ponovo</button>
+                <button class="btn btn-secondary" id="backToTestsBtn">Nazad na Testove</button>
             </div>
         </div>
     </div>
 
     <script src="quiz-data-expanded.js"></script>
-    <script src="quiz-engine-updated.js"></script>
+    <script src="quiz-engine-mobile-fix.js"></script>
 </body>
 </html>
