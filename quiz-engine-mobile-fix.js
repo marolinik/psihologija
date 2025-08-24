@@ -362,7 +362,7 @@ function selectAnswer(answerIndex) {
 // Prikaz feedback-a za odgovor
 function showAnswerFeedback(selectedIndex) {
     const question = currentQuiz.questions[currentQuestionIndex];
-    const correctIndex = question.correct;
+    const correctIndex = question.correctAnswer !== undefined ? question.correctAnswer : question.correct;
     
     // Onemogući sve opcije
     document.querySelectorAll('.option').forEach(option => {
@@ -432,7 +432,9 @@ function finishQuiz() {
     // Izračunaj skor
     score = 0;
     userAnswers.forEach((answer, index) => {
-        if (answer === currentQuiz.questions[index].correct) {
+        const question = currentQuiz.questions[index];
+        const correctAnswer = question.correctAnswer !== undefined ? question.correctAnswer : question.correct;
+        if (answer === correctAnswer) {
             score++;
         }
     });
@@ -491,6 +493,55 @@ function showResults() {
         message = 'Potrebno je još učenja. Probajte ponovo!';
     }
     document.getElementById('scoreMessage').textContent = message;
+    
+    // Dodaj pregled pitanja i odgovora
+    showDetailedResults();
+}
+
+// Prikaz detaljnih rezultata sa svim pitanjima
+function showDetailedResults() {
+    const resultsContainer = document.getElementById('resultsContainer');
+    
+    // Proveri da li već postoji kontejner za detalje
+    let detailsDiv = document.getElementById('resultsDetails');
+    if (!detailsDiv) {
+        detailsDiv = document.createElement('div');
+        detailsDiv.id = 'resultsDetails';
+        detailsDiv.style.cssText = 'margin-top: 30px; text-align: left; max-width: 800px; margin-left: auto; margin-right: auto;';
+        resultsContainer.appendChild(detailsDiv);
+    }
+    
+    // Generiši HTML za pregled svih pitanja
+    let detailsHTML = '<h3 style="text-align: center; margin-bottom: 20px;">Pregled odgovora:</h3>';
+    
+    currentQuiz.questions.forEach((question, index) => {
+        const userAnswer = userAnswers[index];
+        const correctAnswer = question.correctAnswer !== undefined ? question.correctAnswer : question.correct;
+        const isCorrect = userAnswer === correctAnswer;
+        
+        detailsHTML += `
+            <div style="margin-bottom: 25px; padding: 15px; background: ${isCorrect ? '#e8f5e9' : '#ffebee'}; border-radius: 8px; border-left: 4px solid ${isCorrect ? '#4caf50' : '#f44336'};">
+                <p style="font-weight: bold; margin-bottom: 10px;">
+                    ${index + 1}. ${question.question}
+                </p>
+                <p style="margin: 5px 0;">
+                    Vaš odgovor: <span style="font-weight: bold; color: ${isCorrect ? '#4caf50' : '#f44336'};">
+                        ${question.options[userAnswer]}
+                    </span>
+                    ${isCorrect ? '✓' : '✗'}
+                </p>
+                ${!isCorrect ? `
+                    <p style="margin: 5px 0;">
+                        Tačan odgovor: <span style="font-weight: bold; color: #4caf50;">
+                            ${question.options[correctAnswer]}
+                        </span>
+                    </p>
+                ` : ''}
+            </div>
+        `;
+    });
+    
+    detailsDiv.innerHTML = detailsHTML;
 }
 
 // Ponovi kviz
@@ -499,6 +550,12 @@ function retryQuiz() {
     userAnswers = [];
     score = 0;
     currentQuestionIndex = 0;
+    
+    // Ukloni detalje rezultata ako postoje
+    const detailsDiv = document.getElementById('resultsDetails');
+    if (detailsDiv) {
+        detailsDiv.remove();
+    }
     
     // Sakrij rezultate
     const resultsContainer = document.getElementById('resultsContainer');
@@ -511,6 +568,12 @@ function retryQuiz() {
 
 // Nazad na testove
 function backToTests() {
+    // Ukloni detalje rezultata ako postoje
+    const detailsDiv = document.getElementById('resultsDetails');
+    if (detailsDiv) {
+        detailsDiv.remove();
+    }
+    
     // Sakrij rezultate
     const resultsContainer = document.getElementById('resultsContainer');
     if (resultsContainer) {
