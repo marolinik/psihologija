@@ -3116,7 +3116,7 @@ function generateComprehensiveTests() {
         });
     }
 
-    for (let i = 1; i <= 15; i++) {
+    for (let i = 1; i <= 20; i++) {
         let testQuestions = [];
         let usedIndices = new Set();
         
@@ -3137,3 +3137,1142 @@ function generateComprehensiveTests() {
 }
 
 generateComprehensiveTests();
+
+// Dodajemo 5 dodatnih testova (16-20) sa pitanjima u formatu ispitnih rokova
+const examStyleTests = [
+    {
+        id: 16,
+        title: "Sveobuhvatni Test 16 - Ispitni format",
+        questions: [
+            {
+                question: "Prema Maslovljevoj teoriji motivacije, potrebe poštovanja:",
+                options: [
+                    "dolaze neposredno nakon fizioloških potreba",
+                    "čine četvrti nivo u hijerarhiji potreba",
+                    "su manje važne od potreba samoaktualizacije",
+                    "dolaze nakon potreba sigurnosti i pripadanja"
+                ],
+                correctAnswer: 3
+            },
+            {
+                question: "Hotornski eksperiment je pokazao da:",
+                options: [
+                    "osvetljenje direktno utiče na produktivnost",
+                    "novac je jedini motivator za rad",
+                    "socijalni faktori značajno utiču na radnu efikasnost",
+                    "fizički uslovi rada su najvažniji faktor produktivnosti"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Profesionalna selekcija se razlikuje od profesionalne orijentacije po tome što:",
+                options: [
+                    "polazi od posla i bira najboljeg izvršioca",
+                    "polazi od čoveka i bira najbolji posao",
+                    "ne koristi psihološke testove",
+                    "je kraći proces"
+                ],
+                correctAnswer: 0
+            },
+            {
+                question: "Fluktuacija radnika označava:",
+                options: [
+                    "odsustvovanje sa posla",
+                    "smanjenje produktivnosti",
+                    "neplanirano napuštanje organizacije",
+                    "povrede na radu"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Teorija X i Y pripada:",
+                options: [
+                    "Frederiku Tejloru",
+                    "Eltonu Meju",
+                    "Daglasu Mekgregoru",
+                    "Abrahamu Maslovlju"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Tehnopsihofiziologija rada se bavi:",
+                options: [
+                    "selekcijom radnika",
+                    "prilagođavanjem rada čoveku",
+                    "motivacijom zaposlenih",
+                    "profesionalnom orijentacijom"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Vrumova teorija motivacije spada u grupu:",
+                options: [
+                    "sadržajnih teorija",
+                    "instrumentalnih teorija",
+                    "hijerarhijskih teorija",
+                    "dvofaktorskih teorija"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Formalne grupe u organizaciji:",
+                options: [
+                    "nastaju spontano",
+                    "imaju nepisane norme",
+                    "formirane su od strane organizacije",
+                    "zasnovane su na prijateljstvu"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Apsentizam radnika može biti uzrokovan: (TAČNO/NETAČNO) - Lošim međuljudskim odnosima",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 0
+            },
+            {
+                question: "Frederik Tejlor je smatrao da je novac jedini motiv za rad. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 0
+            },
+            {
+                question: "Profesionalno praćenje je faza profesionalne selekcije. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 1
+            },
+            {
+                question: "Neformalne grupe nemaju uticaj na produktivnost. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 1
+            },
+            {
+                question: "Herzbergovi higijanski faktori mogu dovesti do zadovoljstva. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 1
+            },
+            {
+                question: "Stres na radu uvek ima negativne posledice. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 1
+            },
+            {
+                question: "Dopunite rečenicu: Proces odabiranja između većeg broja kandidata za posao naziva se ___________.",
+                options: [
+                    "profesionalna orijentacija",
+                    "profesionalna selekcija",
+                    "profesionalna adaptacija",
+                    "profesionalno savetovanje"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Dopunite: Škola koja je nastala nakon Hotornskih eksperimenata naziva se škola ___________ odnosa.",
+                options: [
+                    "međuljudskih",
+                    "ekonomskih",
+                    "socijalnih",
+                    "organizacijskih"
+                ],
+                correctAnswer: 0
+            },
+            {
+                question: "Koja teorija motivacije razlikuje motivatore i higijenske faktore?",
+                options: [
+                    "Maslovjeva teorija",
+                    "Herzbergova dvofaktorska teorija",
+                    "Vrumova teorija očekivanja",
+                    "Teorija X i Y"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Analiza posla NE obuhvata:",
+                options: [
+                    "opis posla",
+                    "zahteve posla",
+                    "platu radnika",
+                    "uslove rada"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Koja dimenzija ličnosti iz Big Five modela je najvažnija za timski rad?",
+                options: [
+                    "Neuroticizam",
+                    "Ekstraverzija",
+                    "Prijatnost",
+                    "Savesnost"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Interna fluktuacija označava:",
+                options: [
+                    "napuštanje organizacije",
+                    "prelazak na drugo mesto unutar iste organizacije",
+                    "privremeno odsustvo",
+                    "smanjenje radnog vremena"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Koji od navedenih faktora NE spada u Herzbergove motivatore?",
+                options: [
+                    "Uspeh",
+                    "Priznanje",
+                    "Plata",
+                    "Odgovornost"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Organizaciona kultura predstavlja:",
+                options: [
+                    "formalne propise organizacije",
+                    "sistem vrednosti, normi i verovanja",
+                    "hijerarhijsku strukturu",
+                    "poslovnu strategiju"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Probni rad kao metoda selekcije je najefikasniji za:",
+                options: [
+                    "rukovodeće pozicije",
+                    "jednostavne manuelne poslove",
+                    "kreativne poslove",
+                    "analitičke poslove"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Sindrom sagorevanja na poslu karakteriše:",
+                options: [
+                    "povećana motivacija",
+                    "emocionalna iscrpljenost",
+                    "povećana produktivnost",
+                    "bolje interpersonalne veze"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Superova teorija profesionalnog razvoja naglašava važnost:",
+                options: [
+                    "ekonomskih faktora",
+                    "koncepta o sebi",
+                    "inteligencije",
+                    "obrazovanja"
+                ],
+                correctAnswer: 1
+            }
+        ]
+    },
+    {
+        id: 17,
+        title: "Sveobuhvatni Test 17 - Ispitni format",
+        questions: [
+            {
+                question: "Osnivač 'naučne organizacije rada' je:",
+                options: [
+                    "Elton Mejo",
+                    "Frederik Tejlor",
+                    "Abraham Maslov",
+                    "Kurt Levin"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Potrebe samoaktualizacije u Maslovljevoj hijerarhiji:",
+                options: [
+                    "su na prvom nivou",
+                    "su na trećem nivou",
+                    "su na petom nivou",
+                    "nisu deo hijerarhije"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Profesionalno informisanje obuhvata:",
+                options: [
+                    "psihološko testiranje",
+                    "pružanje informacija o svetu rada",
+                    "praćenje adaptacije",
+                    "donošenje konačne odluke"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Stopa apsentizma se izračunava kao:",
+                options: [
+                    "broj odsutnih radnika / ukupan broj radnika",
+                    "broj izgubljenih radnih dana / ukupan broj radnih dana",
+                    "broj bolovanja / ukupan broj radnika",
+                    "broj neopravdanih izostanaka / ukupan broj izostanaka"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Teorija Z u rukovođenju naglašava:",
+                options: [
+                    "strogu kontrolu",
+                    "individualizam",
+                    "dugoročno zaposlenje i lojalnost",
+                    "kratkoročne ciljeve"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Koji od sledećih faktora je Herzbergov higijanski faktor?",
+                options: [
+                    "Postignuće",
+                    "Napredovanje",
+                    "Uslovi rada",
+                    "Odgovornost"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Neformalne grupe u organizaciji nastaju na osnovu:",
+                options: [
+                    "formalnih propisa",
+                    "zajedničkih interesovanja i prijateljstva",
+                    "hijerarhijske strukture",
+                    "radnih zadataka"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Adaptacija radnika na posao ima dve dimenzije:",
+                options: [
+                    "fizičku i psihičku",
+                    "profesionalnu i organizacionu",
+                    "individualnu i grupnu",
+                    "kratkoročnu i dugoročnu"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Profesionalna orijentacija polazi od čoveka i bira za njega najbolji posao. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 0
+            },
+            {
+                question: "Visoka fluktuacija ne predstavlja problem za organizaciju. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 1
+            },
+            {
+                question: "Primarne grupe karakterišu bliski, intimni odnosi. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 0
+            },
+            {
+                question: "Stres na radu može imati i pozitivne efekte. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 0
+            },
+            {
+                question: "Teorija X pretpostavlja da ljudi prirodno vole rad. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 1
+            },
+            {
+                question: "Instrumentalne teorije motivacije fokusiraju se na sadržaj posla. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 1
+            },
+            {
+                question: "Dopunite: Neplanirano i neorganizovano kretanje radne snage između organizacija naziva se ___________.",
+                options: [
+                    "apsentizam",
+                    "fluktuacija",
+                    "migracija",
+                    "rotacija"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Dopunite: Proces prilagođavanja novog radnika poslu i organizaciji naziva se ___________.",
+                options: [
+                    "selekcija",
+                    "orijentacija",
+                    "adaptacija",
+                    "socijalizacija"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Koji stil rukovođenja karakteriše visoka orijentacija i na ljude i na zadatak?",
+                options: [
+                    "Autokratski",
+                    "Demokratski",
+                    "Laissez-faire",
+                    "Integrativni"
+                ],
+                correctAnswer: 3
+            },
+            {
+                question: "Komunikacione barijere mogu biti:",
+                options: [
+                    "samo fizičke",
+                    "samo psihološke",
+                    "fizičke, psihološke i semantičke",
+                    "samo organizacione"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Koji nivo konflikta je najproduktivniji za organizaciju?",
+                options: [
+                    "Nulti nivo",
+                    "Umeren nivo",
+                    "Visok nivo",
+                    "Maksimalan nivo"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Transformaciono liderstvo karakteriše:",
+                options: [
+                    "fokus na kratkoročne ciljeve",
+                    "inspirisanje i motivisanje sledbenika",
+                    "striktno pridržavanje pravila",
+                    "izbegavanje promena"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Koja metoda analize posla koristi strukturisane upitnike?",
+                options: [
+                    "Posmatranje",
+                    "Intervju",
+                    "PAQ metoda",
+                    "Probni rad"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Grupno mišljenje (groupthink) vodi ka:",
+                options: [
+                    "boljim odlukama",
+                    "većoj kreativnosti",
+                    "lošim odlukama zbog pritiska za konsenzusom",
+                    "individualnoj odgovornosti"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Koji tip organizacione strukture je najfleksibilniji?",
+                options: [
+                    "Hijerarhijska",
+                    "Funkcionalna",
+                    "Matrična",
+                    "Mrežna"
+                ],
+                correctAnswer: 3
+            },
+            {
+                question: "360-stepeni feedback podrazumeva ocenjivanje od strane:",
+                options: [
+                    "samo nadređenog",
+                    "samo kolega",
+                    "nadređenih, kolega, podređenih i samog sebe",
+                    "samo klijenata"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Koji faktor najviše utiče na organizacionu klimu?",
+                options: [
+                    "Veličina organizacije",
+                    "Stil rukovođenja",
+                    "Lokacija organizacije",
+                    "Tehnologija"
+                ],
+                correctAnswer: 1
+            }
+        ]
+    },
+    {
+        id: 18,
+        title: "Sveobuhvatni Test 18 - Ispitni format",
+        questions: [
+            {
+                question: "Hotornski eksperimenti su trajali od:",
+                options: [
+                    "1920-1925",
+                    "1927-1932",
+                    "1935-1940",
+                    "1945-1950"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Koji od sledećih NE spada u metode profesionalne selekcije?",
+                options: [
+                    "Testovi sposobnosti",
+                    "Intervju",
+                    "Profesionalno savetovanje",
+                    "Assessment centar"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Maslovjeva hijerarhija potreba ima:",
+                options: [
+                    "3 nivoa",
+                    "4 nivoa",
+                    "5 nivoa",
+                    "6 nivoa"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Pojam 'burnout' označava:",
+                options: [
+                    "visoku motivaciju",
+                    "sindrom sagorevanja",
+                    "brzu adaptaciju",
+                    "visoku produktivnost"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Koji od sledećih faktora NIJE uzrok apsentizma?",
+                options: [
+                    "Bolest",
+                    "Loši uslovi rada",
+                    "Visoka plata",
+                    "Konflikti na poslu"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Teorija Y pretpostavlja da:",
+                options: [
+                    "ljudi izbegavaju odgovornost",
+                    "ljudi prirodno žele da rade",
+                    "potrebna je stroga kontrola",
+                    "novac je jedini motivator"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Formalna komunikacija u organizaciji ide:",
+                options: [
+                    "samo odozgo nadole",
+                    "samo odozdo nagore",
+                    "u svim pravcima kroz hijerarhiju",
+                    "samo horizontalno"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Kohezivnost grupe označava:",
+                options: [
+                    "broj članova grupe",
+                    "stepen privlačnosti grupe za članove",
+                    "produktivnost grupe",
+                    "formalnu strukturu grupe"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Ergonomija se bavi prilagođavanjem rada čoveku. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 0
+            },
+            {
+                question: "Konflikti u organizaciji su uvek štetni. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 1
+            },
+            {
+                question: "Demokratski stil rukovođenja uvek daje najbolje rezultate. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 1
+            },
+            {
+                question: "Zadovoljstvo poslom direktno vodi visokoj produktivnosti. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 1
+            },
+            {
+                question: "Assessment centar je metoda profesionalne selekcije. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 0
+            },
+            {
+                question: "Neformalna komunikacija nije važna za organizaciju. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 1
+            },
+            {
+                question: "Dopunite: Oblast koja proučava prilagođavanje radnog mesta čoveku naziva se ___________.",
+                options: [
+                    "ergonomija",
+                    "psihologija",
+                    "sociologija",
+                    "antropologija"
+                ],
+                correctAnswer: 0
+            },
+            {
+                question: "Dopunite: Stepen u kom članovi grupe žele da ostanu u njoj naziva se ___________.",
+                options: [
+                    "produktivnost",
+                    "kohezivnost",
+                    "efikasnost",
+                    "lojalnost"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Koji tip konflikta je najštetniji za organizaciju?",
+                options: [
+                    "Funkcionalni konflikt",
+                    "Konflikt zadataka",
+                    "Konflikt odnosa",
+                    "Konflikt procesa"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Mentoring predstavlja:",
+                options: [
+                    "grupnu obuku",
+                    "odnos iskusnog i manje iskusnog radnika",
+                    "online učenje",
+                    "formalno obrazovanje"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Koja je glavna karakteristika timskog rada?",
+                options: [
+                    "Individualna odgovornost",
+                    "Sinergija i zajednički cilj",
+                    "Hijerarhijska struktura",
+                    "Formalna komunikacija"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Job enrichment podrazumeva:",
+                options: [
+                    "povećanje plate",
+                    "obogaćivanje sadržaja posla",
+                    "smanjenje radnog vremena",
+                    "promenu radnog mesta"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Koji faktor najviše utiče na organizacionu posvećenost?",
+                options: [
+                    "Visina plate",
+                    "Radno vreme",
+                    "Organizaciona pravda",
+                    "Beneficije"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Situaciono liderstvo podrazumeva:",
+                options: [
+                    "isti pristup svima",
+                    "prilagođavanje stila zrelosti sledbenika",
+                    "autoritarni pristup",
+                    "potpunu slobodu"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Koji od sledećih faktora NE utiče na grupnu dinamiku?",
+                options: [
+                    "Veličina grupe",
+                    "Norme grupe",
+                    "Lokacija kancelarije",
+                    "Uloge članova"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Organizaciono učenje podrazumeva:",
+                options: [
+                    "samo individualno učenje",
+                    "kontinuirano unapređenje kroz iskustvo",
+                    "formalne treninge",
+                    "čitanje priručnika"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Empowerment zaposlenih znači:",
+                options: [
+                    "strožu kontrolu",
+                    "davanje veće autonomije i ovlašćenja",
+                    "smanjenje odgovornosti",
+                    "češće nadgledanje"
+                ],
+                correctAnswer: 1
+            }
+        ]
+    },
+    {
+        id: 19,
+        title: "Sveobuhvatni Test 19 - Ispitni format",
+        questions: [
+            {
+                question: "Ko je sproveo Hotornske eksperimente?",
+                options: [
+                    "Frederik Tejlor",
+                    "Elton Mejo",
+                    "Henri Fajol",
+                    "Maks Veber"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Profesionalno savetovanje je deo:",
+                options: [
+                    "profesionalne selekcije",
+                    "profesionalne orijentacije",
+                    "analize posla",
+                    "ocene performansi"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Vrumova teorija očekivanja uključuje sve OSIM:",
+                options: [
+                    "valenciju",
+                    "instrumentalnost",
+                    "očekivanje",
+                    "hijerarhiju potreba"
+                ],
+                correctAnswer: 3
+            },
+            {
+                question: "Potencijalna fluktuacija označava:",
+                options: [
+                    "stvarno napuštanje organizacije",
+                    "želju za napuštanjem organizacije",
+                    "unutrašnje premeštanje",
+                    "privremeni odlazak"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Koji stil rukovođenja je najefikasniji u kriznim situacijama?",
+                options: [
+                    "Demokratski",
+                    "Autokratski",
+                    "Laissez-faire",
+                    "Participativni"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Socijalna facilitacija označava:",
+                options: [
+                    "smanjenje performansi u prisustvu drugih",
+                    "poboljšanje performansi u prisustvu drugih",
+                    "izolaciju od grupe",
+                    "grupni pritisak"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Koji od sledećih faktora NE pripada Big Five modelu ličnosti?",
+                options: [
+                    "Ekstraverzija",
+                    "Inteligencija",
+                    "Savesnost",
+                    "Neuroticizam"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Organizaciona socijalizacija je proces:",
+                options: [
+                    "zapošljavanja",
+                    "učenja organizacione kulture",
+                    "napredovanja",
+                    "motivacije"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Tejlorova naučna organizacija rada fokusirala se na ekonomsku motivaciju. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 0
+            },
+            {
+                question: "Sve grupe prolaze kroz iste faze razvoja. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 1
+            },
+            {
+                question: "Organizaciona kultura se ne može menjati. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 1
+            },
+            {
+                question: "Ekstrinzička motivacija dolazi iznutra. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 1
+            },
+            {
+                question: "Brainstorming je tehnika grupnog rešavanja problema. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 0
+            },
+            {
+                question: "Halo efekat je greška u proceni performansi. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 0
+            },
+            {
+                question: "Dopunite: Sindrom psihološkog i emocionalnog iscrpljenja na poslu naziva se ___________.",
+                options: [
+                    "stres",
+                    "burnout",
+                    "depresija",
+                    "anksioznost"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Dopunite: Proces kroz koji nova osoba uči vrednosti i norme organizacije naziva se organizaciona ___________.",
+                options: [
+                    "adaptacija",
+                    "integracija",
+                    "socijalizacija",
+                    "orijentacija"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Job rotation podrazumeva:",
+                options: [
+                    "napredovanje na viši nivo",
+                    "smenu radnih mesta",
+                    "obogaćivanje posla",
+                    "specijalizaciju"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Koja je glavna prednost matrične organizacione strukture?",
+                options: [
+                    "Jasna hijerarhija",
+                    "Fleksibilnost i bolje iskorišćenje resursa",
+                    "Jednostavnost",
+                    "Manja komunikacija"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Feedback treba da bude:",
+                options: [
+                    "samo pozitivan",
+                    "samo negativan",
+                    "specifičan i pravovremeni",
+                    "opšti i redak"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Koji tip inteligencije je najvažniji za lidere?",
+                options: [
+                    "IQ",
+                    "Emocionalna inteligencija",
+                    "Praktična inteligencija",
+                    "Kreativna inteligencija"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Work-life balance se odnosi na:",
+                options: [
+                    "platu i beneficije",
+                    "ravnotežu između posla i privatnog života",
+                    "radno vreme",
+                    "odmor tokom rada"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Koji faktor najviše utiče na zadržavanje talenata?",
+                options: [
+                    "Samo visoka plata",
+                    "Mogućnosti razvoja i napredovanja",
+                    "Kraće radno vreme",
+                    "Više godišnjeg odmora"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Outplacement je:",
+                options: [
+                    "zapošljavanje novih radnika",
+                    "pomoć otpuštenim radnicima u nalaženju novog posla",
+                    "slanje radnika na obuku",
+                    "rad od kuće"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Koji je glavni cilj team buildinga?",
+                options: [
+                    "Zabava",
+                    "Povećanje kohezivnosti i saradnje",
+                    "Odmor od posla",
+                    "Testiranje sposobnosti"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Diversity management se bavi:",
+                options: [
+                    "smanjenjem različitosti",
+                    "upravljanjem i vrednovanjem različitosti",
+                    "zapošljavanjem samo sličnih ljudi",
+                    "segregacijom radnika"
+                ],
+                correctAnswer: 1
+            }
+        ]
+    },
+    {
+        id: 20,
+        title: "Sveobuhvatni Test 20 - Ispitni format",
+        questions: [
+            {
+                question: "Škola međuljudskih odnosa nastala je kao rezultat:",
+                options: [
+                    "Tejlorovih eksperimenata",
+                    "Hotornskih eksperimenata",
+                    "Teorije X i Y",
+                    "Maslovjeve teorije"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Koji od sledećih elemenata NE pripada analizi posla?",
+                options: [
+                    "Opis aktivnosti",
+                    "Potrebne veštine",
+                    "Uslovi rada",
+                    "Lični život radnika"
+                ],
+                correctAnswer: 3
+            },
+            {
+                question: "Herzbergovi motivatori uključuju sve OSIM:",
+                options: [
+                    "priznanje",
+                    "napredovanje",
+                    "interpersonalne odnose",
+                    "odgovornost"
+                ],
+                correctAnswer: 2
+            },
+            {
+                question: "Eksterna fluktuacija označava:",
+                options: [
+                    "prelazak na drugo mesto u istoj firmi",
+                    "napuštanje organizacije",
+                    "privremeni rad",
+                    "rad na više mesta istovremeno"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Transformacioni lider:",
+                options: [
+                    "striktno kontroliše",
+                    "inspiriše i motiviše vizijom",
+                    "fokusira se samo na zadatke",
+                    "izbegava promene"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Grupna polarizacija označava:",
+                options: [
+                    "podelu grupe",
+                    "tendenciju ka ekstremnijim odlukama u grupi",
+                    "harmoniju u grupi",
+                    "individualizam"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Koji od faktora najviše utiče na stres na radu?",
+                options: [
+                    "Visina plate",
+                    "Nejasnoća uloge i preopterećenost",
+                    "Lokacija kancelarije",
+                    "Boja zidova"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Coaching se razlikuje od mentoringa po tome što:",
+                options: [
+                    "traje duže",
+                    "fokusira se na specifične ciljeve i performanse",
+                    "je neformalniji",
+                    "ne zahteva stručnost"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Analiza posla prethodi profesionalnoj selekciji. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 0
+            },
+            {
+                question: "Intrinsička motivacija zavisi od spoljašnjih nagrada. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 1
+            },
+            {
+                question: "Laissez-faire stil rukovođenja podrazumeva minimalnu kontrolu. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 0
+            },
+            {
+                question: "Organizaciona klima i kultura su sinonimi. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 1
+            },
+            {
+                question: "Delphi tehnika koristi se za grupno odlučivanje. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 0
+            },
+            {
+                question: "Job satisfaction i job performance su u perfektnoj korelaciji. (TAČNO/NETAČNO)",
+                options: ["TAČNO", "NETAČNO"],
+                correctAnswer: 1
+            },
+            {
+                question: "Dopunite: Sposobnost prepoznavanja i upravljanja emocijama naziva se ___________ inteligencija.",
+                options: [
+                    "socijalna",
+                    "emocionalna",
+                    "praktična",
+                    "verbalna"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Dopunite: Proces sistematskog prikupljanja informacija o poslu naziva se ___________ posla.",
+                options: [
+                    "evaluacija",
+                    "analiza",
+                    "opis",
+                    "dizajn"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Koji je najčešći razlog neuspešne organizacione promene?",
+                options: [
+                    "Nedostatak resursa",
+                    "Otpor zaposlenih",
+                    "Loša tehnologija",
+                    "Eksterna konkurencija"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Performance management sistem treba da bude:",
+                options: [
+                    "subjektivan",
+                    "kontinuiran i objektivan",
+                    "jednom godišnje",
+                    "samo kazneni"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Organizaciono građansko ponašanje predstavlja:",
+                options: [
+                    "obavezne radne zadatke",
+                    "dobrovoljno pomaganje koje nije formalno nagrađeno",
+                    "kršenje pravila",
+                    "formalnu komunikaciju"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Najvažnija karakteristika visokoefektivnih timova je:",
+                options: [
+                    "velika veličina",
+                    "jasni ciljevi i međusobno poverenje",
+                    "stroga hijerarhija",
+                    "individualna odgovornost"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Glass ceiling označava:",
+                options: [
+                    "transparentnost u organizaciji",
+                    "nevidljive barijere u napredovanju",
+                    "otvorenu komunikaciju",
+                    "jasne ciljeve"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Servant leadership karakteriše:",
+                options: [
+                    "autoritarnost",
+                    "služenje potrebama sledbenika",
+                    "distanciranost",
+                    "fokus samo na profit"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Koji je najbolji prediktor radne uspešnosti?",
+                options: [
+                    "Godine iskustva",
+                    "Kombinacija sposobnosti i motivacije",
+                    "Samo obrazovanje",
+                    "Preporuke"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Organizational citizenship behavior je:",
+                options: [
+                    "obavezno ponašanje",
+                    "diskreciono prosocijalno ponašanje",
+                    "antisocijalno ponašanje",
+                    "formalno propisano"
+                ],
+                correctAnswer: 1
+            },
+            {
+                question: "Najvažniji faktor za kreiranje inovativne kulture je:",
+                options: [
+                    "stroga kontrola",
+                    "tolerancija grešaka i podrška eksperimentisanju",
+                    "hijerarhija",
+                    "standardizacija"
+                ],
+                correctAnswer: 1
+            }
+        ]
+    }
+];
+
+// Dodajemo nove testove u comprehensiveTests niz
+examStyleTests.forEach(test => {
+    comprehensiveTests.push(test);
+});
